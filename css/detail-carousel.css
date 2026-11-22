@@ -1,0 +1,167 @@
+/* EMS Agency / the Property Lookbook: swipeable, warm, elevated 3:4 cards.
+   Native horizontal scrolling + existing fullscreen photo dialog. */
+.detail-page .detail-photo-grid.ems-detail-carousel{
+  display:block!important;
+  height:auto!important;min-height:0!important;max-width:1380px;
+  padding-top:clamp(18px,3vw,42px);
+}
+.detail-page .ems-detail-carousel .ems-detail-mosaic-top{
+  padding:0 0 18px;
+  border-bottom:1px solid var(--ems-edge,#ccbea8);
+  gap:20px;
+}
+.detail-page .ems-detail-carousel .ems-detail-mosaic-top span:last-child{
+  text-align:right;
+}
+.detail-page .ems-detail-carousel{
+  --ems-card-width:clamp(192px,21vw,292px);
+  --ems-card-gap:clamp(12px,1.55vw,23px);
+}
+.detail-page .ems-detail-carousel .ems-carousel-viewport{
+  width:100%;position:relative;overflow-x:auto;overflow-y:hidden;
+  overscroll-behavior-x:contain;
+  scrollbar-width:none;-ms-overflow-style:none;
+  -webkit-overflow-scrolling:touch;
+  scroll-snap-type:x mandatory;
+  scroll-padding-inline:calc((100% - var(--ems-card-width))/2);
+  cursor:grab;
+  border:0;
+  padding:34px 0 44px;
+  outline-offset:-2px;
+}
+.detail-page .ems-detail-carousel .ems-carousel-viewport::-webkit-scrollbar{display:none}
+.detail-page .ems-detail-carousel .ems-carousel-viewport.is-dragging{
+  cursor:grabbing;user-select:none;-webkit-user-select:none;
+}
+.detail-page .ems-detail-carousel .ems-carousel-track{
+  display:flex!important;flex-wrap:nowrap!important;
+  gap:var(--ems-card-gap);
+  width:max-content;max-width:none;min-width:100%;
+  padding-inline:max(0px,calc((100vw - var(--ems-card-width))/2 - 70px));
+  align-items:center;
+}
+.detail-page .ems-detail-carousel .ems-carousel-card.ems-detail-tile,
+.detail-page .ems-detail-carousel .ems-carousel-card.ems-detail-tile:not(:first-child){
+  display:block!important;
+  flex:0 0 var(--ems-card-width)!important;
+  width:var(--ems-card-width)!important;min-width:var(--ems-card-width)!important;
+  max-width:var(--ems-card-width)!important;
+  aspect-ratio:3/4!important;height:auto!important;
+  grid-column:auto!important;grid-row:auto!important;
+  position:relative;overflow:hidden;
+  border-radius:18px!important;
+  border:1px solid rgba(146,117,75,.17)!important;
+  padding:0;margin:0;
+  background:#dfd5c7;
+  box-shadow:0 10px 30px rgba(33,27,19,.14);
+  scroll-snap-align:center;
+  cursor:zoom-in;
+  transform:translateY(7px) scale(.96)!important;
+  opacity:.83;
+  transition:transform .65s cubic-bezier(.18,.84,.2,1),
+             box-shadow .55s,opacity .45s,border-color .55s;
+  will-change:transform;
+}
+.detail-page .ems-detail-carousel .ems-carousel-card.ems-detail-tile.is-active{
+  z-index:3;
+  transform:translateY(-9px) scale(1.035)!important;
+  border-color:rgba(183,141,81,.75)!important;
+  opacity:1;
+  box-shadow:0 23px 47px rgba(40,29,18,.25),0 0 0 1px rgba(222,178,115,.27);
+}
+.detail-page .ems-detail-carousel .ems-carousel-card.ems-detail-tile:hover{
+  opacity:1;
+  box-shadow:0 18px 37px rgba(40,29,18,.26);
+}
+.detail-page .ems-detail-carousel .ems-carousel-card.ems-detail-tile img{
+  width:100%!important;height:100%!important;
+  display:block;object-fit:contain!important;object-position:center!important;
+  filter:none!important;transform:none!important;
+  user-select:none;-webkit-user-drag:none;
+}
+.detail-page .ems-detail-carousel .ems-carousel-card.ems-detail-tile::after{
+  display:none!important;
+}
+.detail-page .ems-detail-carousel .ems-carousel-card .ems-carousel-card-index{
+  position:absolute;top:13px;right:13px;
+  min-width:32px;height:29px;padding:0 8px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:999px;background:rgba(28,24,20,.67);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  color:#fff5e8;letter-spacing:.11em;font-size:10px;font-weight:750;
+  box-shadow:0 3px 10px rgba(0,0,0,.12);
+}
+.detail-page .ems-detail-carousel .ems-carousel-controls{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:clamp(13px,2vw,32px);
+  padding:10px 0 25px;border-bottom:1px solid var(--ems-edge,#c9bda9);
+}
+.detail-page .ems-detail-carousel .ems-carousel-label{
+  flex:0 0 auto;font-size:10px;font-weight:750;letter-spacing:.13em;
+  color:var(--ems-muted,#8a7558);
+}
+.detail-page .ems-detail-carousel .ems-carousel-progress{
+  flex:1;height:2px;min-width:35px;background:rgba(150,124,87,.21);overflow:hidden;
+}
+.detail-page .ems-detail-carousel .ems-carousel-progress span{
+  display:block;height:100%;width:10%;background:#b38d5e;transition:width .45s;
+}
+.detail-page .ems-detail-carousel .ems-carousel-counter{
+  display:flex;gap:8px;align-items:baseline;
+  font-size:12px;letter-spacing:.08em;color:var(--ems-muted,#8a7558);
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.detail-page .ems-detail-carousel .ems-carousel-counter b{
+  font-size:20px;font-weight:650;color:var(--ems-gold,#ac8658);
+}
+.detail-page .ems-detail-carousel .ems-carousel-buttons{display:flex;gap:8px}
+.detail-page .ems-detail-carousel .ems-carousel-buttons button{
+  width:43px;height:43px;border:1px solid #ae8b60;
+  border-radius:999px;display:grid;place-items:center;
+  color:#a68151;background:transparent;
+  font-size:20px;line-height:1;cursor:pointer;
+  transition:background .25s,color .25s,transform .25s;
+}
+.detail-page .ems-detail-carousel .ems-carousel-buttons button:hover{
+  background:#a88656;color:#fff6e9;transform:translateY(-2px);
+}
+.detail-page .ems-detail-carousel .ems-carousel-buttons button:focus-visible,
+.detail-page .ems-detail-carousel .ems-carousel-card:focus-visible,
+.detail-page .ems-detail-carousel .ems-carousel-viewport:focus-visible{
+  outline:2px solid #ba8d57;outline-offset:3px;
+}
+.detail-page .ems-detail-carousel .ems-detail-mosaic-bottom{
+  padding:17px 0 0;border:0;
+}
+@media(max-width:800px){
+  .detail-page .ems-detail-carousel{
+    --ems-card-width:clamp(190px,55vw,300px);
+    --ems-card-gap:14px;
+  }
+  .detail-page .ems-detail-carousel .ems-carousel-track{
+    padding-inline:max(0px,calc((100vw - var(--ems-card-width))/2 - 20px));
+  }
+  .detail-page .ems-detail-carousel .ems-carousel-viewport{padding:30px 0 35px}
+  .detail-page .ems-detail-carousel .ems-carousel-label{font-size:9px}
+}
+@media(max-width:520px){
+  .detail-page .ems-detail-carousel{--ems-card-width:clamp(206px,64vw,280px)}
+  .detail-page .ems-detail-carousel .ems-carousel-track{
+    padding-inline:calc((100vw - var(--ems-card-width))/2 - 20px);
+    gap:11px;
+  }
+  .detail-page .ems-detail-carousel .ems-carousel-controls{flex-wrap:wrap}
+  .detail-page .ems-detail-carousel .ems-carousel-label{flex:1 1 100%}
+  .detail-page .ems-detail-carousel .ems-carousel-progress{flex:1}
+  .detail-page .ems-detail-carousel .ems-carousel-viewport{padding:25px 0 29px}
+  .detail-page .ems-detail-carousel .ems-carousel-card.ems-detail-tile,
+  .detail-page .ems-detail-carousel .ems-carousel-card.ems-detail-tile:not(:first-child){
+    border-radius:16px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .detail-page .ems-detail-carousel .ems-carousel-card,
+  .detail-page .ems-detail-carousel .ems-carousel-progress span{
+    transition:none!important;
+  }
+}

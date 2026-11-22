@@ -1,0 +1,97 @@
+/* EMS Agency — endless art-directed luxury ticker, perfectly seamless. */
+.statement-strip.ems-marquee-infinite{
+  position:relative;
+  display:block;
+  overflow:hidden;
+  isolation:isolate;
+  box-sizing:border-box;
+  width:100%;
+  padding:0;
+  margin:0;
+  border-top:1px solid rgba(75,51,24,.13);
+  border-bottom:1px solid rgba(75,51,24,.13);
+  background:linear-gradient(94deg,#c5a772 0%,#dfc08a 52%,#c6a66f 100%);
+  color:#292015;
+  font-size:clamp(28px,3.25vw,49px);
+  line-height:1;
+  white-space:nowrap;
+}
+.ems-marquee-infinite .ems-marquee-track{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  flex-wrap:nowrap;
+  gap:0;
+  width:max-content;
+  min-width:0;
+  animation:ems-marquee-seamless var(--ems-marquee-duration,60s) linear infinite;
+  animation-play-state:running;
+  will-change:transform;
+}
+.ems-marquee-infinite .ems-marquee-copy{
+  display:flex;
+  align-items:center;
+  flex:0 0 auto;
+  width:max-content;
+  white-space:nowrap;
+  gap:0;
+  padding:17px 0 19px;
+}
+.ems-marquee-infinite .ems-marquee-unit{
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  flex-shrink:0;
+  white-space:nowrap;
+  gap:0;
+}
+.ems-marquee-infinite .ems-marquee-message{
+  flex-shrink:0;
+  white-space:nowrap;
+  padding:0 clamp(15px,2.55vw,43px);
+  vertical-align:middle;
+}
+.ems-marquee-infinite .ems-marquee-serif{
+  font-family:'Italiana',Georgia,serif;
+  font-size:1.16em;
+  font-weight:400;
+  letter-spacing:-.035em;
+}
+.ems-marquee-infinite .ems-marquee-sans{
+  font-family:'Manrope',sans-serif;
+  font-size:.68em;
+  font-weight:500;
+  letter-spacing:-.035em;
+}
+.ems-marquee-infinite .ems-marquee-symbol{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  width:clamp(35px,3vw,53px);
+  line-height:1;
+  font:400 .84em 'Italiana',Georgia,serif;
+  color:#493522;
+}
+@keyframes ems-marquee-seamless{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(-50%,0,0)}
+}
+/* Do not stop on hover, focus or scroll. */
+.ems-marquee-infinite:hover .ems-marquee-track,
+.ems-marquee-infinite:focus-within .ems-marquee-track{
+  animation-play-state:running;
+}
+@media(max-width:680px){
+ .statement-strip.ems-marquee-infinite{font-size:clamp(26px,6.6vw,35px)}
+ .ems-marquee-infinite .ems-marquee-copy{padding:14px 0 16px}
+ .ems-marquee-infinite .ems-marquee-message{padding:0 16px}
+ .ems-marquee-infinite .ems-marquee-symbol{width:33px}
+}
+@media(prefers-reduced-motion:reduce){
+ .ems-marquee-infinite .ems-marquee-track,
+ .ems-marquee-infinite:hover .ems-marquee-track{
+   animation:none;
+   transform:none;
+ }
+}

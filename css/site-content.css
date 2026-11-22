@@ -1,0 +1,27 @@
+/* Owner-editable social contact surfaces */
+.form-contact-note .ems-instagram-contact{
+  display:inline-flex;
+  gap:9px;
+  align-items:center;
+  width:fit-content;
+  color:#79572c;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.5;
+  border-bottom:1px solid rgba(150,116,68,.48);
+  padding:4px 0 7px;
+  transition:color .23s,border-color .23s;
+}
+.form-contact-note .ems-instagram-contact:hover{
+  color:#a87932;
+  border-bottom-color:#a87932;
+}
+.foot-links .ems-instagram-footer{
+  color:#e1bf81;
+}
+.foot-links .ems-instagram-footer:hover{
+  color:white;
+}
+@media(prefers-reduced-motion:reduce){
+  .form-contact-note .ems-instagram-contact{transition:none}
+}

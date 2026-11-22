@@ -1,0 +1,127 @@
+/* EMS Agency / adaptive glass-free navigation.
+   Keeps the original transparent brand artwork in both dark and light colorways. */
+.global-header,
+.global-header.scrolled{
+  position:fixed!important;
+  top:0!important;left:0!important;right:0!important;
+  background:transparent!important;
+  background-image:none!important;
+  background-color:transparent!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  box-shadow:none!important;
+  --nav-ink:#f8f3ea;
+  --nav-muted:rgba(247,241,229,.86);
+  --nav-line:rgba(255,250,241,.52);
+  color:var(--nav-ink)!important;
+  transition:color .34s ease,background-color .34s ease!important;
+}
+.global-header.nav-on-light{
+  --nav-ink:#211d18;
+  --nav-muted:rgba(37,32,25,.79);
+  --nav-line:rgba(42,35,25,.36);
+}
+.global-header .main-nav a{
+  color:var(--nav-muted)!important;
+  transition:color .28s ease!important;
+}
+.global-header .main-nav a:hover,
+.global-header .main-nav a.active{
+  color:#c7a56b!important;
+}
+.global-header.nav-on-light .main-nav a:hover,
+.global-header.nav-on-light .main-nav a.active{
+  color:#947341!important;
+}
+.global-header .head-actions,
+.global-header .head-actions a,
+.global-header .fav-nav,
+.global-header .head-cta{
+  color:var(--nav-ink)!important;
+  transition:color .34s ease,border-color .34s ease!important;
+}
+.global-header .head-cta{
+  border-bottom:1px solid var(--nav-line)!important;
+}
+.global-header .head-cta span{color:#cba970!important}
+.global-header.nav-on-light .head-cta span{color:#967548!important}
+.global-header .menu-btn{
+  border-color:var(--nav-line)!important;
+  transition:border-color .3s ease!important;
+}
+.global-header .menu-btn span{
+  background:var(--nav-ink)!important;
+  transition:background-color .3s ease!important;
+}
+.global-header .logo-link.ems-logo-original,
+.global-header .logo-link.ems-logo-original:hover{
+  width:86px!important;
+  min-width:86px!important;
+  height:93px!important;
+  flex:0 0 86px!important;
+  display:block!important;
+  position:relative!important;
+  align-self:center!important;
+  top:auto!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:none!important;
+  background-color:transparent!important;
+  box-shadow:none!important;
+  transform:none!important;
+}
+.global-header .logo-link.ems-logo-original img.ems-logo-layer{
+  display:block!important;
+  position:absolute!important;
+  top:50%!important;
+  left:50%!important;
+  width:auto!important;
+  height:84px!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  transform:translate(-50%,-50%)!important;
+  filter:none!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transition:opacity .32s ease,visibility .32s ease!important;
+}
+.global-header .ems-logo-on-dark{opacity:1!important;visibility:visible!important}
+.global-header .ems-logo-on-light{opacity:0!important;visibility:hidden!important}
+.global-header.nav-on-light .ems-logo-on-dark{opacity:0!important;visibility:hidden!important}
+.global-header.nav-on-light .ems-logo-on-light{opacity:1!important;visibility:visible!important}
+/* The expanded mobile panel intentionally stays dark regardless of the background. */
+.global-header .mobile-menu.open{
+  background:rgba(23,20,15,.98)!important;
+}
+.global-header .mobile-menu.open a{
+  color:#f6ede0!important;
+}
+@media(max-width:800px){
+  .global-header .logo-link.ems-logo-original,
+  .global-header .logo-link.ems-logo-original:hover{
+    width:72px!important;min-width:72px!important;flex-basis:72px!important;height:77px!important;
+  }
+  .global-header .logo-link.ems-logo-original img.ems-logo-layer{
+    height:68px!important;
+  }
+}
+@media(max-width:560px){
+  .global-header .logo-link.ems-logo-original,
+  .global-header .logo-link.ems-logo-original:hover{
+    width:64px!important;min-width:64px!important;flex-basis:64px!important;height:77px!important;
+  }
+  .global-header .logo-link.ems-logo-original img.ems-logo-layer{
+    height:66px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .global-header .main-nav a,
+  .global-header .ems-logo-layer,
+  .global-header .head-actions a,
+  .global-header .menu-btn span{
+    transition:none!important;
+  }
+}

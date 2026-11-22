@@ -1,0 +1,86 @@
+/* EMS / PROJECT EDITIONS — editorial real-estate gallery, adaptive to any CMS item count */
+#home-grid.ems-project-editions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch}
+#catalogue-grid.ems-project-editions{display:grid;grid-template-columns:1fr;gap:39px}
+.ems-expo{min-width:0;position:relative;isolation:isolate;overflow:hidden}
+.ems-expo-image{min-width:0;position:relative;overflow:hidden;background:#575044}
+.ems-expo-visual{display:block;position:relative;width:100%;height:100%;overflow:hidden;isolation:isolate}
+.ems-expo-visual:after{content:'';position:absolute;inset:0;background:linear-gradient(#0006,transparent 31%,transparent 67%,#0004);pointer-events:none;z-index:2}
+.ems-expo-cover,.ems-expo-alt{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.7,.2,1),opacity .7s ease}
+.ems-expo-alt{opacity:0;transform:scale(1.065)}
+@media(hover:hover){.ems-expo:hover .ems-expo-cover{transform:scale(1.07)}.ems-expo:hover .ems-expo-alt{opacity:1;transform:scale(1.02)}}
+.ems-expo:focus-within .ems-expo-alt{opacity:1;transform:scale(1.02)}
+.ems-expo-photo-tag{position:absolute;top:24px;left:26px;z-index:4;font-size:9px;font-weight:800;letter-spacing:.18em;color:#fff7ec}
+.ems-expo-image-arrow{position:absolute;bottom:25px;right:25px;z-index:4;border:1px solid #ffffffe0;background:#24201755;color:white;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;font-size:24px;transition:transform .3s ease,background .3s ease,color .3s ease}
+.ems-expo:hover .ems-expo-image-arrow,.ems-expo:focus-within .ems-expo-image-arrow{background:#d4af75;color:#19160f;transform:rotate(45deg)}
+.ems-expo .ems-expo-fav{position:absolute;z-index:6;top:17px;right:18px;left:auto;width:42px;height:42px;border-radius:50%;border:1px solid #fff9;background:#252018aa;display:grid;place-items:center;color:#fff;font-size:24px;line-height:1;cursor:pointer}
+.ems-expo .ems-expo-fav.active,.ems-expo .ems-expo-fav:hover{background:#d4b47c;color:#231b12}
+.ems-expo-story{display:flex;min-width:0;flex-direction:column;justify-content:space-between;position:relative}
+.ems-expo-small{display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:9px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:#af956e}
+.ems-expo-small span:last-child{opacity:.55}
+.ems-expo-city{display:block;color:#c49f66;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.ems-expo-title h3{font-size:clamp(38px,4.35vw,68px);letter-spacing:-.08em;line-height:1.08;font-weight:500;margin:22px 0 20px;overflow-wrap:anywhere}
+.ems-expo-kind{font-size:10px;letter-spacing:.15em;line-height:1.6;font-weight:700;opacity:.75;text-transform:uppercase}
+.ems-expo-kind i{padding:0 6px;font-style:normal;color:#c59e69}
+.ems-expo-specs{display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:10px;font-weight:700;letter-spacing:.13em;opacity:.82}
+.ems-expo-specs b{height:12px;width:1px;background:currentColor;opacity:.35}
+.ems-expo-rule{height:1px;width:100%;background:currentColor;opacity:.19;margin:21px 0}
+.ems-expo-bottom{display:flex;justify-content:space-between;gap:18px;align-items:flex-end}
+.ems-expo-price{display:flex;flex-direction:column;min-width:0;gap:8px}
+.ems-expo-price small{font-size:9px;letter-spacing:.14em;opacity:.57;font-weight:750}
+.ems-expo-price strong{font-size:clamp(18px,2.1vw,26px);font-weight:650;line-height:1.15;color:#d2ac75;letter-spacing:-.015em}
+.ems-expo-cta{display:flex;align-items:center;gap:13px;color:inherit;font-size:9px;letter-spacing:.11em;font-weight:800;text-decoration:none;white-space:nowrap}
+.ems-expo-cta b{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:1px solid currentColor;font-size:20px;font-weight:400;transition:background .3s,transform .3s,color .3s}
+.ems-expo-cta:hover b{background:#d1ad77;color:#16130f;transform:rotate(45deg)}
+.ems-expo a:focus-visible,.ems-expo button:focus-visible{outline:2px solid #d8b77d;outline-offset:4px}
+/* 01 — home: one large editorial featured project, more curated projects beneath */
+#home-grid .ems-expo{display:flex;flex-direction:column;background:#2b251e;color:#fbf1e3}
+#home-grid .ems-expo-image{height:365px;min-height:365px}
+#home-grid .ems-expo-story{flex:1;padding:30px}
+#home-grid .ems-expo-title{margin:28px 0 42px}
+#home-grid .ems-expo-title h3{font-size:clamp(32px,3.2vw,53px)}
+#home-grid .ems-expo--lead{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);min-height:545px}
+#home-grid .ems-expo--lead .ems-expo-image{height:auto;min-height:545px}
+#home-grid .ems-expo--lead .ems-expo-story{padding:clamp(32px,4.6vw,72px)}
+#home-grid .ems-expo--lead .ems-expo-title h3{font-size:clamp(44px,5vw,79px)}
+#home-grid .ems-expo--lead .ems-expo-title{margin:30px 0 55px}
+/* 02 — catalogue: cinematic alternating image/story spreads on light linen */
+#catalogue-grid .ems-expo{display:grid;grid-template-columns:1.06fr .94fr;background:#eee9e0;color:#2c241c;border:1px solid #e2d9cb;min-height:525px;transition:box-shadow .4s ease,border-color .4s ease}
+#catalogue-grid .ems-expo:hover{box-shadow:0 25px 52px #45361f19;border-color:#cbb69a}
+#catalogue-grid .ems-expo-image{min-height:525px}
+#catalogue-grid .ems-expo-story{padding:clamp(34px,5vw,70px)}
+#catalogue-grid .ems-expo:nth-child(even){grid-template-columns:.94fr 1.06fr}
+#catalogue-grid .ems-expo:nth-child(even) .ems-expo-image{grid-column:2;grid-row:1}
+#catalogue-grid .ems-expo:nth-child(even) .ems-expo-story{grid-column:1;grid-row:1}
+#catalogue-grid .ems-expo:nth-child(3n+2){background:#e6dfd4}
+#catalogue-grid .ems-expo:nth-child(3n){background:#f5eee5}
+#catalogue-grid .ems-expo-city{color:#997346}
+#catalogue-grid .ems-expo-price strong{color:#80613a}
+#catalogue-grid .ems-expo-small{color:#95764b}
+#catalogue-grid .ems-expo-cta{color:#373026}
+@media(min-width:801px) and (max-width:1120px){#home-grid .ems-expo--lead .ems-expo-story{padding:34px}#home-grid .ems-expo-bottom{align-items:flex-start;flex-direction:column}#catalogue-grid .ems-expo-story{padding:34px}#catalogue-grid .ems-expo-cta span{display:none}}
+@media(max-width:800px){
+ #home-grid.ems-project-editions{grid-template-columns:1fr}
+ #home-grid .ems-expo--lead{grid-column:auto;display:flex;min-height:0}
+ #home-grid .ems-expo--lead .ems-expo-image{height:420px;min-height:0}
+ #home-grid .ems-expo--lead .ems-expo-story{padding:30px}
+ #catalogue-grid .ems-expo,#catalogue-grid .ems-expo:nth-child(even){grid-template-columns:1fr;min-height:0}
+ #catalogue-grid .ems-expo-image,#catalogue-grid .ems-expo:nth-child(even) .ems-expo-image{grid-column:1;grid-row:1;min-height:0;height:410px}
+ #catalogue-grid .ems-expo-story,#catalogue-grid .ems-expo:nth-child(even) .ems-expo-story{grid-column:1;grid-row:2;min-height:340px;padding:33px}
+ #catalogue-grid .ems-expo-title{margin:30px 0 40px}
+}
+@media(max-width:560px){
+ #home-grid .ems-expo-image,#home-grid .ems-expo--lead .ems-expo-image,#catalogue-grid .ems-expo-image,#catalogue-grid .ems-expo:nth-child(even) .ems-expo-image{height:320px;min-height:0}
+ #home-grid .ems-expo-story,#home-grid .ems-expo--lead .ems-expo-story,#catalogue-grid .ems-expo-story,#catalogue-grid .ems-expo:nth-child(even) .ems-expo-story{padding:25px}
+ #home-grid .ems-expo-title h3,#home-grid .ems-expo--lead .ems-expo-title h3,#catalogue-grid .ems-expo-title h3{font-size:clamp(32px,9.3vw,52px)}
+ #home-grid .ems-expo-title,#home-grid .ems-expo--lead .ems-expo-title{margin:25px 0 34px}
+ .ems-expo-cta span{display:none}
+ .ems-expo-cta b{width:43px;height:43px}
+ .ems-expo-small{font-size:8px}
+ .ems-expo-photo-tag{font-size:8px;left:16px;top:21px}
+ .ems-expo-image-arrow{width:49px;height:49px;right:16px;bottom:16px}
+ #catalogue-grid.ems-project-editions{gap:22px}
+}
+@media(prefers-reduced-motion:reduce){.ems-expo-cover,.ems-expo-alt,.ems-expo,.ems-expo-image-arrow,.ems-expo-cta b{transition:none!important}}
+
+/* Calm entrance once an editorial project meets the viewport. */
+@media(prefers-reduced-motion:no-preference){@keyframes ems-project-enter{from{opacity:.65;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}.ems-expo-reveal.ems-expo-visible{animation:ems-project-enter .88s cubic-bezier(.16,1,.3,1) both}}

@@ -1,0 +1,19 @@
+/* EMS Home final CTA — same cinematic contact composition and original animation */
+.ems-final-contact{isolation:isolate; padding-top:105px; padding-bottom:90px; border-top:1px solid rgba(211,181,121,.12)}
+.ems-final-contact .contact-intro h2{font-size:clamp(61px,6.5vw,100px);font-weight:500;line-height:1.04;letter-spacing:-.085em;margin:20px 0 27px}
+.ems-final-contact .contact-intro h2 em{color:#d4b379}
+.ems-final-contact::before{content:"";pointer-events:none;position:absolute;inset:-12%;z-index:0;background:radial-gradient(ellipse at 68% 48%,rgba(199,166,99,.15),transparent 35%),radial-gradient(ellipse at 35% 84%,rgba(209,166,93,.075),transparent 40%);animation:emsContactLight 11s ease-in-out infinite}
+.ems-final-contact .contact-stage-grid{position:relative;z-index:2}
+.ems-final-contact .art-outer{animation:emsOrbitBreathe 12s ease-in-out infinite;will-change:transform}
+.ems-final-contact .art-outer::before{animation:emsRingOne 28s ease-in-out infinite}
+.ems-final-contact .art-outer::after{animation:emsRingTwo 32s ease-in-out infinite}
+.ems-final-contact .art-card{animation:emsCardFloat 7.5s ease-in-out infinite;will-change:transform}
+.ems-final-contact .art-float.top{animation:emsFloatTop 9s ease-in-out infinite;will-change:transform}
+.ems-final-contact .art-float.bottom{animation:emsFloatBottom 10s ease-in-out infinite;will-change:transform}
+.ems-final-contact .art-card::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(110deg,transparent 30%,rgba(239,215,164,.08) 49%,transparent 65%);background-size:220% 100%;animation:emsCardSheen 15s ease-in-out infinite}
+.ems-final-contact .art-float{transition:background .3s ease,box-shadow .3s ease,border-color .3s ease}
+.ems-final-contact .art-float:hover{background:rgba(236,206,148,.15);border-color:rgba(232,208,165,.48);box-shadow:0 15px 40px rgba(9,8,6,.15)}
+.ems-final-contact .contact-actions a:focus-visible,.ems-final-contact .contact-city-tags a:focus-visible{outline:2px solid #e9c88b;outline-offset:4px}
+@media(max-width:800px){.ems-final-contact{padding-top:95px;padding-bottom:73px}.ems-final-contact .contact-intro h2{font-size:clamp(66px,9vw,100px)}}
+@media(max-width:560px){.ems-final-contact{padding-top:83px;padding-bottom:55px}.ems-final-contact .contact-intro h2{font-size:clamp(51px,11.9vw,78px)}.ems-final-contact .contact-stage-art{min-height:370px}.ems-final-contact .contact-bottom-index{left:20px;bottom:16px}}
+@media(prefers-reduced-motion:reduce){.ems-final-contact::before,.ems-final-contact .art-outer,.ems-final-contact .art-outer::before,.ems-final-contact .art-outer::after,.ems-final-contact .art-card,.ems-final-contact .art-card::after,.ems-final-contact .art-float{animation:none!important;will-change:auto!important}}

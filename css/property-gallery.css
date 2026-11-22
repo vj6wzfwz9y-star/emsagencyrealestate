@@ -1,0 +1,106 @@
+/* EMS AGENCY — photo gallery UI for projects, touch, lightbox + accessibility. */
+.ems-expo-image .ems-photo-nav{
+ position:absolute;bottom:25px;left:24px;z-index:7;display:flex;align-items:center;gap:9px;
+ background:rgba(17,17,15,.66);border:1px solid rgba(255,255,255,.45);
+ backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+ color:#fff8eb;padding:6px 10px;
+}
+.ems-photo-nav button{
+ border:0;background:transparent;color:#fff8eb;cursor:pointer;
+ width:30px;height:30px;display:grid;place-items:center;
+ font-size:25px;line-height:1;padding:0;
+}
+.ems-photo-nav button:hover{color:#e0c18b}
+.ems-photo-count{font-size:10px;font-weight:800;letter-spacing:.14em;min-width:50px;text-align:center;font-variant-numeric:tabular-nums}
+.ems-expo-visual{cursor:zoom-in;touch-action:pan-y}
+.ems-expo-visual[data-ems-gallery-used="true"] .ems-expo-alt,
+.ems-expo-visual[data-ems-gallery-used="true"]:hover .ems-expo-alt{opacity:0!important;pointer-events:none!important}
+.ems-gallery-lightbox{
+ position:fixed;inset:0;width:100vw;max-width:none;height:100dvh;max-height:none;
+ border:0;border-radius:0;padding:0;margin:0;background:#14130f;color:#fff5e9;
+ box-shadow:none;overflow:hidden;overscroll-behavior:contain;z-index:9999999;
+}
+.ems-gallery-lightbox::backdrop{background:rgba(8,7,6,.97)}
+.ems-lightbox-shell{height:100%;display:flex;flex-direction:column;min-height:0}
+.ems-lightbox-head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:19px clamp(22px,4vw,70px);border-bottom:1px solid rgba(255,255,255,.13);flex:0 0 auto}
+.ems-lightbox-head>div{display:flex;flex-direction:column;gap:5px;min-width:0}
+.ems-lightbox-eyebrow{font-size:9px;letter-spacing:.18em;color:#c7ac7a;font-weight:800}
+.ems-lightbox-title{font-size:clamp(16px,2vw,25px);font-weight:500;letter-spacing:-.035em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ems-lightbox-close{width:44px;height:44px;flex:0 0 auto;display:grid;place-items:center;background:transparent;border:1px solid rgba(255,255,255,.4);color:white;font-size:32px;font-weight:300;cursor:pointer}
+.ems-lightbox-stage{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center;overflow:hidden;touch-action:pan-y}
+.ems-lightbox-image{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;display:block;user-select:none;-webkit-user-drag:none}
+.ems-lightbox-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:51px;height:51px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.57);border-radius:50%;background:rgba(15,13,11,.7);color:white;font-size:24px;cursor:pointer}
+.ems-lightbox-arrow:hover{background:#c2a06a;color:#17120e;border-color:#c2a06a}
+.ems-lightbox-prev{left:clamp(12px,3.5vw,56px)}
+.ems-lightbox-next{right:clamp(12px,3.5vw,56px)}
+.ems-lightbox-foot{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px clamp(22px,4vw,70px);color:#a8a092;flex:0 0 auto;font-size:10px;letter-spacing:.17em;font-weight:750}
+.ems-lightbox-counter{color:#e1c18b;font-variant-numeric:tabular-nums}
+.ems-lightbox-thumbnails{display:flex;align-items:center;justify-content:center;gap:10px;flex:0 0 auto;overflow-x:auto;scrollbar-width:thin;scrollbar-color:#9d8865 transparent;padding:10px 24px 17px}
+.ems-lightbox-thumbnails button{width:70px;height:54px;flex:0 0 70px;cursor:pointer;padding:0;border:2px solid transparent;background:#2a241d;opacity:.52;transition:border-color .2s,opacity .2s}
+.ems-lightbox-thumbnails button:hover,.ems-lightbox-thumbnails button.selected{opacity:1;border-color:#d1ad71}
+.ems-lightbox-thumbnails img{width:100%;height:100%;object-fit:cover;display:block}
+.detail-photo-grid[data-ems-detail-images]{position:relative}
+.detail-photo-grid[data-ems-detail-images] img{cursor:zoom-in}
+.ems-detail-gallery-open{position:absolute;bottom:21px;right:21px;z-index:5;background:#1d1914e8;color:#f1e6d2;border:1px solid #f4e9d785;padding:15px 23px;font-size:10px;letter-spacing:.12em;font-weight:800;cursor:pointer;backdrop-filter:blur(10px)}
+.ems-detail-gallery-open:hover{background:#d7b77e;color:#1a150e}
+.ems-gallery-lightbox button:focus-visible,.ems-expo-image button:focus-visible,.ems-detail-gallery-open:focus-visible{outline:3px solid #e9ca8b;outline-offset:4px}
+@media(max-width:650px){
+ .ems-lightbox-head{padding:13px 17px}
+ .ems-lightbox-close{width:38px;height:38px;font-size:26px}
+ .ems-lightbox-arrow{width:42px;height:42px;font-size:22px;top:auto;bottom:10px;transform:none}
+ .ems-lightbox-stage{min-height:0}
+ .ems-lightbox-thumbnails{justify-content:flex-start;gap:8px;padding:9px 14px 16px}
+ .ems-lightbox-thumbnails button{width:61px;height:48px;flex-basis:61px}
+ .ems-lightbox-foot{padding:12px 18px}
+ .ems-expo-image .ems-photo-nav{bottom:14px;left:12px;gap:5px;padding:5px 7px}
+ .ems-expo-image-arrow{right:14px;bottom:14px}
+ .ems-detail-gallery-open{bottom:13px;right:13px;padding:13px 16px}
+}
+@media(prefers-reduced-motion:reduce){.ems-lightbox-thumbnails button{transition:none}}
+
+
+/* EMS — minimal gallery controls: glyphs only, no visible button frame. */
+.ems-gallery-lightbox .ems-lightbox-close,
+.ems-gallery-lightbox .ems-lightbox-arrow,
+.ems-gallery-lightbox .ems-lightbox-close:hover,
+.ems-gallery-lightbox .ems-lightbox-arrow:hover {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  padding: 0 !important;
+}
+.ems-gallery-lightbox .ems-lightbox-close,
+.ems-gallery-lightbox .ems-lightbox-arrow {
+  color: #fff5e9;
+  text-shadow: 0 2px 11px rgba(0,0,0,.55);
+  transition: color .22s ease, transform .22s ease;
+}
+.ems-gallery-lightbox .ems-lightbox-close:hover,
+.ems-gallery-lightbox .ems-lightbox-arrow:hover {
+  color: #dfbf86 !important;
+}
+.ems-gallery-lightbox .ems-lightbox-close { font-weight: 300; }
+@media (prefers-reduced-motion: reduce) {
+  .ems-gallery-lightbox .ems-lightbox-close,
+  .ems-gallery-lightbox .ems-lightbox-arrow { transition: none; }
+}
+
+
+/* EMS / 3:4 uncropped portrait lightbox thumbnails */
+.ems-gallery-lightbox .ems-lightbox-thumbnails button{
+ width:57px;height:76px;flex:0 0 57px;background:#322b21;
+}
+.ems-gallery-lightbox .ems-lightbox-thumbnails img{object-fit:contain!important}
+.ems-gallery-lightbox .ems-lightbox-image{
+ object-fit:contain!important;object-position:center!important;
+}
+@media(max-width:650px){
+ .ems-gallery-lightbox .ems-lightbox-thumbnails button{
+  width:45px;height:60px;flex-basis:45px;
+ }
+}

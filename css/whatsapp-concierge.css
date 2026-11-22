@@ -1,0 +1,294 @@
+/* EMS AGENCY | WhatsApp Private Line.
+   A floating art-directed champagne-glass concierge instead of a neon green
+   third-party chat bubble. Adapted to the current day/night site theme. */
+.ems-wa-dock{
+  --wa-glass:linear-gradient(145deg,rgba(52,43,34,.86),rgba(25,22,19,.80));
+  --wa-ink:#fbf0dd;
+  --wa-muted:#d4b991;
+  --wa-stroke:rgba(224,189,132,.61);
+  --wa-strong:#d6b078;
+  position:fixed;
+  bottom:clamp(18px,2vw,30px);
+  right:clamp(18px,2.1vw,31px);
+  z-index:91;
+  display:block;
+  width:221px;
+  max-width:calc(100vw - 34px);
+  pointer-events:auto;
+  isolation:isolate;
+  animation:emsWaArrival .7s cubic-bezier(.15,.8,.19,1) both;
+}
+.ems-wa-dock-link{
+  position:relative;isolation:isolate;overflow:hidden;
+  display:flex;align-items:center;
+  gap:13px;
+  min-height:64px;
+  padding:9px 17px 9px 9px;
+  border:1px solid var(--wa-stroke);
+  border-radius:999px;
+  background:var(--wa-glass);
+  color:var(--wa-ink);
+  -webkit-backdrop-filter:blur(22px) saturate(145%);
+  backdrop-filter:blur(22px) saturate(145%);
+  box-shadow:0 17px 35px rgba(19,13,8,.22),
+    inset 0 1px 0 rgba(255,248,232,.18);
+  text-decoration:none!important;
+  cursor:pointer;
+  transition:transform .35s ease,background .35s ease,
+    box-shadow .35s ease,border-color .35s ease;
+}
+.ems-wa-dock-link::after{
+  content:"";position:absolute;z-index:0;pointer-events:none;
+  top:-60%;bottom:-60%;left:-140%;width:55%;
+  background:linear-gradient(100deg,transparent,rgba(255,249,224,.14),transparent);
+  transform:skewX(-16deg);
+  animation:emsWaSheen 12s ease-in-out infinite;
+}
+.ems-wa-orbit{
+  display:grid;place-items:center;flex:0 0 46px;
+  width:46px;height:46px;position:relative;z-index:1;
+  border-radius:50%;
+  background:radial-gradient(circle at 30% 25%,rgba(248,213,156,.43),rgba(195,146,74,.20));
+  border:1px solid rgba(229,192,134,.65);
+  box-shadow:inset 0 1px 0 rgba(255,250,236,.23);
+}
+.ems-wa-orbit::before{
+  content:"";position:absolute;inset:-5px;
+  border:1px solid rgba(221,181,120,.16);border-radius:50%;
+  animation:emsWaRing 6.8s ease-in-out infinite;
+  pointer-events:none;
+}
+.ems-wa-icon{display:grid;place-items:center;color:#eac998}
+.ems-wa-icon svg{display:block;width:23px;height:23px}
+.ems-wa-dock-copy{
+  display:flex;flex-direction:column;align-items:flex-start;
+  flex:1;min-width:0;position:relative;z-index:1;
+}
+.ems-wa-dock-eyebrow{
+  color:var(--wa-muted);
+  font:750 8px/1.5 'Manrope','DM Sans',sans-serif;
+  white-space:nowrap;letter-spacing:.13em;
+}
+.ems-wa-dock-line{
+  width:100%;display:flex;justify-content:space-between;
+  align-items:baseline;gap:10px;
+}
+.ems-wa-dock-title{
+  color:var(--wa-ink);
+  font:400 23px/1.05 'Italiana',Georgia,serif;
+  letter-spacing:-.045em;
+}
+.ems-wa-dock-arrow{
+  font:400 18px/1 'Manrope',sans-serif;
+  color:var(--wa-strong);
+  transition:transform .3s ease,color .3s ease;
+}
+.ems-wa-dock-link:hover,
+.ems-wa-dock-link:focus-visible{
+  transform:translateY(-4px);
+  border-color:var(--wa-strong);
+  box-shadow:0 19px 44px rgba(25,16,8,.29),
+    0 0 0 2px rgba(218,182,122,.09),
+    inset 0 1px 0 rgba(255,253,244,.32);
+}
+.ems-wa-dock-link:hover .ems-wa-dock-arrow{transform:translate(2px,-2px)}
+.ems-wa-dock-link:hover .ems-wa-orbit{background:rgba(206,158,95,.4)}
+.ems-wa-dock-link:focus-visible,
+.ems-wa-private-action:focus-visible{
+  outline:2px solid #d8ad72;outline-offset:4px;
+}
+/* Contrast stays rich on warm ivory pages. */
+html[data-ems-theme="light"] .ems-wa-dock{
+  --wa-glass:linear-gradient(145deg,rgba(255,252,243,.88),rgba(237,225,206,.78));
+  --wa-ink:#30261b;--wa-muted:#947248;
+  --wa-stroke:rgba(155,118,65,.48);
+  --wa-strong:#916a3e;
+}
+html[data-ems-theme="light"] .ems-wa-dock-link{
+  box-shadow:0 14px 38px rgba(77,49,17,.14),inset 0 1px 0 rgba(255,255,255,.75);
+}
+html[data-ems-theme="light"] .ems-wa-icon{color:#7a5634}
+html[data-ems-theme="light"] .ems-wa-orbit{background:rgba(214,176,120,.23)}
+body.menu-open .ems-wa-dock{
+  opacity:0!important;visibility:hidden!important;pointer-events:none!important;
+}
+/* Integrated contact-page editorial direct line */
+body[data-page="contact"] .ems-wa-private-line{
+  --wa-panel-ink:#352a1e;--wa-panel-muted:#8f7759;
+  --wa-panel-gold:#a17d4c;--wa-panel-stroke:rgba(148,108,60,.38);
+  position:relative;display:block;
+  width:100%;max-width:420px;
+  margin-top:25px;
+  padding:23px 24px 18px;
+  background:linear-gradient(125deg,rgba(255,255,255,.48),rgba(214,182,132,.10));
+  border:1px solid var(--wa-panel-stroke);
+  border-radius:2px 22px 2px 2px;
+  box-shadow:0 13px 32px rgba(64,43,18,.08);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  color:var(--wa-panel-ink);
+  overflow:hidden;isolation:isolate;
+}
+body[data-page="contact"] .ems-wa-private-line::before{
+  content:"";position:absolute;top:0;left:0;width:38%;height:2px;
+  background:linear-gradient(90deg,var(--wa-panel-gold),transparent);
+  pointer-events:none;
+}
+body[data-page="contact"] .ems-wa-private-line::after{
+  content:"";position:absolute;right:-47px;top:-60px;
+  width:150px;height:150px;border-radius:50%;
+  border:1px solid rgba(176,134,76,.17);
+  box-shadow:0 0 0 27px rgba(171,134,85,.035);
+  pointer-events:none;z-index:-1;
+}
+.ems-wa-private-top,
+.ems-wa-private-bottom{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.ems-wa-private-kicker{
+  color:var(--wa-panel-gold);
+  font:800 9px/1.4 'Manrope',sans-serif;letter-spacing:.14em;
+}
+.ems-wa-private-mark{font-size:16px;color:var(--wa-panel-gold)}
+.ems-wa-private-content h3{
+  margin:23px 0 13px!important;
+  font:400 clamp(31px,3.2vw,45px)/1.04 'Italiana',Georgia,serif!important;
+  letter-spacing:-.04em!important;
+  color:var(--wa-panel-ink)!important;
+}
+.ems-wa-private-content h3 em{
+  color:var(--wa-panel-gold);
+  font:italic 400 .87em/1 Georgia,serif;
+  letter-spacing:-.06em;
+}
+.ems-wa-private-content p{
+  margin:0 0 20px!important;
+  color:var(--wa-panel-muted);
+  font:400 12px/1.7 'Manrope',sans-serif!important;
+}
+.ems-wa-private-action{
+  display:inline-flex;justify-content:space-between;align-items:center;
+  gap:11px;min-height:48px;max-width:100%;
+  padding:5px 7px 5px 7px;
+  border:1px solid var(--wa-panel-gold);
+  border-radius:999px;
+  background:rgba(162,123,71,.09);
+  color:var(--wa-panel-ink)!important;
+  text-decoration:none!important;
+  transition:transform .28s,background .28s,box-shadow .28s,color .28s;
+}
+.ems-wa-private-action-icon{
+  display:grid;place-items:center;
+  height:35px;width:35px;flex:0 0 35px;
+  border-radius:50%;
+  background:rgba(166,124,64,.16);
+  color:var(--wa-panel-gold);
+}
+.ems-wa-private-action-icon svg{width:18px;height:18px}
+.ems-wa-private-action-text{
+  font:800 10px/1.3 'Manrope','DM Sans',sans-serif;
+  letter-spacing:.08em;padding:0 3px;
+}
+.ems-wa-private-action-arrow{
+  display:grid;place-items:center;
+  width:33px;height:33px;flex:0 0 33px;
+  border:1px solid var(--wa-panel-stroke);border-radius:50%;
+  font-size:18px;color:var(--wa-panel-gold);
+  transition:transform .28s;
+}
+.ems-wa-private-action:hover,.ems-wa-private-action:focus-visible{
+  transform:translateY(-2px);
+  background:#d6b17b;color:#2b2013!important;
+  box-shadow:0 9px 24px rgba(40,29,15,.15);
+}
+.ems-wa-private-action:hover .ems-wa-private-action-icon{
+  background:rgba(53,34,13,.09);color:#2b2013;
+}
+.ems-wa-private-action:hover .ems-wa-private-action-arrow{
+  transform:rotate(42deg);
+  border-color:rgba(63,38,19,.45);color:#2b2013;
+}
+.ems-wa-private-bottom{
+  margin-top:21px;padding-top:13px;
+  border-top:1px solid var(--wa-panel-stroke);
+  font:750 8px/1.45 'Manrope',sans-serif;
+  letter-spacing:.095em;color:var(--wa-panel-muted);
+}
+html[data-ems-theme="dark"] body[data-page="contact"] .ems-wa-private-line{
+  --wa-panel-ink:#eee1cc;--wa-panel-muted:#c5ac8b;
+  --wa-panel-gold:#deb782;--wa-panel-stroke:rgba(225,179,113,.33);
+  background:linear-gradient(135deg,rgba(105,80,51,.19),rgba(34,28,22,.24));
+  box-shadow:0 13px 32px rgba(0,0,0,.14);
+}
+html[data-ems-theme="dark"] body[data-page="contact"] .ems-wa-private-action:hover{
+  background:#d6b17b;color:#241b14!important;
+}
+@media(max-width:700px){
+  .ems-wa-dock{
+    bottom:15px;right:14px;width:164px;
+  }
+  .ems-wa-dock-link{min-height:53px;padding:6px 10px 6px 6px;gap:9px}
+  .ems-wa-orbit{width:40px;height:40px;flex-basis:40px}
+  .ems-wa-icon svg{width:20px;height:20px}
+  .ems-wa-dock-eyebrow{font-size:7px;letter-spacing:.065em}
+  .ems-wa-dock-title{font-size:21px}
+  .ems-wa-dock-arrow{font-size:15px}
+}
+@media(max-width:370px){
+  .ems-wa-dock{width:143px;right:10px;bottom:11px}
+  .ems-wa-dock-eyebrow{font-size:6px}
+  .ems-wa-dock-title{font-size:20px}
+  .ems-wa-dock-link{gap:7px}
+  .ems-wa-private-bottom{flex-wrap:wrap;gap:5px}
+}
+@media(prefers-reduced-motion:reduce){
+  .ems-wa-dock,
+  .ems-wa-dock-link::after,
+  .ems-wa-orbit::before{
+    animation:none!important;
+  }
+  .ems-wa-dock-link,
+  .ems-wa-dock-arrow,
+  .ems-wa-private-action,
+  .ems-wa-private-action-arrow{
+    transition:none!important;transform:none!important;
+  }
+}
+@keyframes emsWaRing{
+  0%,100%{transform:scale(1);opacity:.28}
+  50%{transform:scale(1.06);opacity:.72}
+}
+@keyframes emsWaSheen{
+  0%,18%{left:-140%;opacity:0}
+  25%{opacity:1}
+  44%{left:160%;opacity:.5}
+  52%,100%{left:160%;opacity:0}
+}
+@keyframes emsWaArrival{
+  from{opacity:0;transform:translateY(12px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* WhatsApp's recognisable, unmodified green brand mark sourced online,
+   kept distinct from EMS's champagne-glass UI treatment. */
+.ems-wa-icon .ems-wa-official-logo{
+  display:block;
+  width:24px;height:24px;
+  border-radius:50%;
+  object-fit:cover;
+  background:#00c853;
+  box-shadow:0 2px 8px rgba(0,0,0,.16);
+}
+.ems-wa-private-action-icon .ems-wa-official-logo{
+  display:block;
+  width:23px;height:23px;
+  border-radius:50%;
+  object-fit:cover;
+  background:#00c853;
+}
+.ems-wa-icon svg,.ems-wa-private-action-icon svg{display:none}
+@media(max-width:700px){
+  .ems-wa-icon .ems-wa-official-logo{width:21px;height:21px}
+  .ems-wa-private-action-icon .ems-wa-official-logo{width:23px;height:23px}
+}
+/* EMS / hide floating WhatsApp dock; preserve private contact-page concierge card. */
+.ems-wa-dock{display:none!important;visibility:hidden!important;pointer-events:none!important}

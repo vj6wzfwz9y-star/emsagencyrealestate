@@ -1,0 +1,339 @@
+/* EMS PRIVATE ATELIER | Art direction for the actual live Wix contact form.
+   Same inputs, data/validation and submission. Totally different presentation. */
+body[data-page="contact"] .contact-form-section{
+ --atelier-gold:#a47d4d;--atelier-ink:#30271e;--atelier-muted:#8b7966;
+ --atelier-line:rgba(155,120,77,.33);
+ padding:clamp(72px,8vw,123px) 0!important;
+ position:relative;isolation:isolate;overflow:hidden;
+ background:radial-gradient(ellipse at 85% 16%,rgba(184,144,91,.16),transparent 52%),#f5f0e8!important;
+}
+body[data-page="contact"] .contact-form-section::before{
+ content:"";position:absolute;width:55vw;height:55vw;min-width:400px;min-height:400px;
+ border:1px solid rgba(160,122,70,.08);border-radius:50%;
+ top:-24vw;right:-17vw;pointer-events:none;z-index:-1;
+ box-shadow:0 0 0 85px rgba(169,136,89,.024),0 0 0 175px rgba(169,136,89,.016);
+}
+body[data-page="contact"] .contact-form-layout{
+ display:grid!important;grid-template-columns:minmax(0,.77fr) minmax(0,1.23fr)!important;
+ align-items:start!important;gap:clamp(30px,5vw,78px)!important;
+ position:relative;max-width:1370px;
+}
+body[data-page="contact"] .form-editorial{
+ padding:clamp(12px,2vw,29px) 0 0!important;
+ display:flex;flex-direction:column;align-items:flex-start;
+}
+body[data-page="contact"] .form-editorial .section-kicker{
+ display:flex;align-items:center;gap:12px;color:var(--atelier-gold)!important;
+ font-size:10px!important;letter-spacing:.20em!important;
+}
+body[data-page="contact"] .form-editorial .section-kicker::before{
+ content:"";width:22px;height:1px;background:currentColor;
+}
+body[data-page="contact"] .form-editorial h2{
+ margin:clamp(20px,3vw,38px) 0 23px!important;
+ font:400 clamp(46px,5.5vw,86px)/1.02 'Italiana',Georgia,serif!important;
+ letter-spacing:-.052em!important;
+ color:var(--atelier-ink)!important;text-wrap:balance;
+}
+body[data-page="contact"] .form-editorial h2 em{
+ font:italic 400 .84em/1 Georgia,serif!important;letter-spacing:-.062em!important;
+ color:var(--atelier-gold)!important;
+}
+body[data-page="contact"] .form-editorial > p{
+ max-width:420px;margin:0 0 clamp(25px,4vw,49px)!important;
+ color:var(--atelier-muted)!important;
+ font:400 13px/1.95 'Manrope',sans-serif!important;
+}
+body[data-page="contact"] .form-contact-note{
+ box-sizing:border-box;width:100%;max-width:420px;
+ display:grid!important;grid-template-columns:28px minmax(0,1fr);gap:5px 13px!important;
+ margin:0!important;padding:17px 0!important;
+ background:transparent!important;
+ border-top:1px solid var(--atelier-line)!important;
+ color:var(--atelier-ink)!important;
+}
+body[data-page="contact"] .form-contact-note::before{
+ content:"✳";grid-column:1;grid-row:1 / span 2;
+ color:var(--atelier-gold);font-size:13px;
+}
+body[data-page="contact"] .form-contact-note > span{
+ grid-column:2;color:var(--atelier-gold)!important;
+ font:750 9px/1.4 'Manrope',sans-serif!important;letter-spacing:.17em;
+}
+body[data-page="contact"] .form-contact-note > b,
+body[data-page="contact"] .form-contact-note > a{
+ grid-column:2;font:550 12px/1.6 'Manrope',sans-serif!important;
+ color:var(--atelier-ink)!important;overflow-wrap:anywhere;
+}
+body[data-page="contact"] .form-contact-note > a:hover{
+ color:var(--atelier-gold)!important;
+}
+/* Silk-paper surface with light flowing through instead of a white form box. */
+body[data-page="contact"] .form-surface{
+ --form-ink:#2f281f;--form-muted:#82715c;--form-gold:#a47c49;
+ --form-rule:rgba(149,115,72,.35);--form-hint:#a0978c;
+ align-self:start!important;justify-self:stretch;
+ position:relative;isolation:isolate;overflow:hidden;
+ padding:clamp(25px,3.2vw,48px)!important;
+ margin:0!important;min-height:0!important;height:auto!important;
+ border:1px solid rgba(185,145,94,.44)!important;
+ border-radius:3px 29px 3px 3px!important;
+ background:linear-gradient(145deg,rgba(255,255,255,.76),rgba(244,236,221,.54))!important;
+ -webkit-backdrop-filter:blur(19px) saturate(125%);
+ backdrop-filter:blur(19px) saturate(125%);
+ color:var(--form-ink)!important;
+ box-shadow:0 22px 62px rgba(51,35,16,.11),inset 0 1px rgba(255,255,255,.8)!important;
+}
+body[data-page="contact"] .form-surface::before{
+ content:"";position:absolute;z-index:-1;pointer-events:none;top:-90px;right:-76px;
+ width:210px;height:210px;border:1px solid rgba(173,135,81,.18);border-radius:50%;
+ box-shadow:0 0 0 22px rgba(173,135,81,.025),0 0 0 43px rgba(173,135,81,.017);
+}
+body[data-page="contact"] .form-surface::after{
+ content:"";position:absolute;left:0;top:0;z-index:2;
+ width:48%;height:2px;pointer-events:none;
+ background:linear-gradient(90deg,#ac7f48,rgba(185,140,83,.30),transparent);
+}
+body[data-page="contact"] .form-surface > *{position:relative;z-index:1}
+body[data-page="contact"] .ems-concierge-topline{
+ display:flex;align-items:center;justify-content:space-between;gap:12px;
+ margin-bottom:clamp(20px,3vw,36px);
+}
+body[data-page="contact"] .ems-concierge-topline .form-no{
+ color:var(--form-gold)!important;
+ font:800 9px/1.35 'Manrope',sans-serif!important;letter-spacing:.20em!important;
+}
+body[data-page="contact"] .ems-concierge-emblem{
+ display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;
+ border:1px solid var(--form-rule);border-radius:50%;
+ color:var(--form-gold);font-size:18px;
+}
+body[data-page="contact"] .ems-concierge-heading{
+ padding:0 0 24px;border-bottom:1px solid var(--form-rule);
+}
+body[data-page="contact"] .ems-concierge-eyebrow{
+ display:block;margin-bottom:10px;
+ color:var(--form-gold);
+ font:800 9px/1.3 'Manrope',sans-serif;letter-spacing:.17em;
+}
+body[data-page="contact"] .ems-concierge-heading h3{
+ margin:0!important;color:var(--form-ink)!important;
+ font:400 clamp(39px,4vw,60px)/1 'Italiana',Georgia,serif!important;
+ letter-spacing:-.05em!important;
+}
+body[data-page="contact"] .ems-concierge-heading h3 em{
+ font:italic 400 .89em/1 Georgia,serif;
+ letter-spacing:-.06em;color:var(--form-gold);
+}
+body[data-page="contact"] .ems-concierge-heading p{
+ margin:15px 0 0!important;max-width:420px;color:var(--form-muted);
+ font:400 12px/1.65 'Manrope',sans-serif;
+}
+/* Art-directed numbered inline fields; Wix form logic is unmodified. */
+body[data-page="contact"] .wix-live-form{
+ counter-reset:atelier-field;
+ display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ margin:clamp(24px,3vw,35px) 0 0!important;
+ gap:clamp(20px,2.3vw,35px) clamp(17px,2.3vw,30px)!important;
+}
+body[data-page="contact"] .wix-live-form .field{
+ box-sizing:border-box;position:relative;min-width:0;
+ display:grid!important;
+ grid-template-columns:21px minmax(0,1fr);
+ grid-template-rows:auto auto auto;
+ gap:6px 7px!important;
+ counter-increment:atelier-field;
+ padding:0 0 10px!important;margin:0!important;
+ border:0!important;border-bottom:1px solid var(--form-rule)!important;
+ background:transparent!important;
+ transition:border-color .26s;
+}
+body[data-page="contact"] .wix-live-form .field.wide{grid-column:1/-1!important}
+body[data-page="contact"] .wix-live-form .field::before{
+ content:counter(atelier-field,decimal-leading-zero);
+ grid-column:1;grid-row:1 / span 2;margin-top:2px;
+ color:var(--form-gold);
+ font:750 9px/1.3 'Manrope',sans-serif;opacity:.85;
+}
+body[data-page="contact"] .wix-live-form .field label{
+ display:block!important;grid-column:2;grid-row:1;
+ color:var(--form-muted)!important;
+ margin:0!important;
+ font:750 10px/1.4 'Manrope',sans-serif!important;
+ letter-spacing:.045em!important;
+ transition:color .26s;
+}
+body[data-page="contact"] .wix-live-form .field input,
+body[data-page="contact"] .wix-live-form .field select,
+body[data-page="contact"] .wix-live-form .field textarea{
+ display:block!important;grid-column:2;grid-row:2;
+ width:100%!important;min-width:0!important;min-height:40px!important;
+ height:auto;box-sizing:border-box;
+ border:0!important;border-radius:0!important;outline:0!important;
+ padding:7px 2px 8px 0!important;
+ background:transparent!important;box-shadow:none!important;
+ color:var(--form-ink)!important;
+ font:500 14px/1.5 'Manrope','DM Sans',sans-serif!important;
+}
+body[data-page="contact"] .wix-live-form .field textarea{
+ min-height:105px!important;line-height:1.7!important;resize:vertical;
+}
+body[data-page="contact"] .wix-live-form .field select{
+ appearance:none;-webkit-appearance:none;
+ padding-right:21px!important;cursor:pointer;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23a47f4d' stroke-width='1.7'%3E%3Cpath d='m3 6 5 5 5-5'/%3E%3C/svg%3E")!important;
+ background-repeat:no-repeat!important;
+ background-position:right 2px center!important;
+ background-size:16px 16px!important;
+}
+body[data-page="contact"] .wix-live-form .field select option{
+ color:#352920;background:#f5ede1;
+}
+body[data-page="contact"] .wix-live-form .field input::placeholder,
+body[data-page="contact"] .wix-live-form .field textarea::placeholder{
+ color:var(--form-hint)!important;opacity:1!important;font-weight:400;
+}
+body[data-page="contact"] .wix-live-form .field:focus-within{
+ border-bottom-color:var(--form-gold)!important;
+ box-shadow:0 1px 0 var(--form-gold);
+}
+body[data-page="contact"] .wix-live-form .field:focus-within label{
+ color:var(--form-gold)!important;
+}
+body[data-page="contact"] .wix-live-form .field :is(input,select,textarea):focus-visible{
+ outline:2px solid rgba(166,120,62,.53)!important;outline-offset:4px;
+}
+body[data-page="contact"] .wix-live-form .field input[type=checkbox]{
+ width:18px!important;min-height:18px!important;
+ accent-color:var(--form-gold);
+}
+body[data-page="contact"] .wix-live-form .field-error{
+ grid-column:2;grid-row:3;margin:0!important;
+ color:#ad5347!important;font:500 10px/1.4 'Manrope',sans-serif!important;
+}
+body[data-page="contact"] .wix-live-form .field-error:empty{display:none!important}
+body[data-page="contact"] .form-action-row{
+ grid-column:1/-1!important;
+ display:flex;align-items:center;justify-content:space-between;
+ flex-wrap:wrap;gap:15px;
+ margin-top:5px;padding-top:23px;
+ border-top:1px solid var(--form-rule);
+}
+body[data-page="contact"] .form-action-row .form-global-error{
+ flex:1 1 150px;margin:0!important;
+ color:#ab5449!important;font-size:11px!important;
+}
+body[data-page="contact"] .form-action-row button#form-submit{
+ box-sizing:border-box;display:inline-flex!important;
+ align-items:center!important;justify-content:space-between!important;
+ gap:23px;min-width:min(100%,251px)!important;
+ width:auto!important;max-width:100%;min-height:56px;
+ padding:8px 9px 8px 22px!important;
+ border:1px solid var(--form-gold)!important;border-radius:999px!important;
+ color:var(--form-ink)!important;
+ background:rgba(179,135,75,.09)!important;
+ font:800 11px/1.2 'Manrope',sans-serif!important;
+ letter-spacing:.04em;cursor:pointer;
+ -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+ transition:background .28s,border-color .28s,color .28s,transform .28s,box-shadow .28s!important;
+}
+body[data-page="contact"] .form-action-row button#form-submit span{
+ display:grid;place-items:center;flex:0 0 37px;width:37px;height:37px;
+ border:1px solid var(--form-gold);border-radius:50%;
+ color:var(--form-gold)!important;font-size:19px!important;font-weight:400;
+ transition:transform .28s,color .28s,border-color .28s;
+}
+body[data-page="contact"] .form-action-row button#form-submit:hover,
+body[data-page="contact"] .form-action-row button#form-submit:focus-visible{
+ background:#cca26c!important;border-color:#cca26c!important;
+ color:#251b13!important;transform:translateY(-2px);
+ box-shadow:0 12px 28px rgba(51,31,13,.17);
+}
+body[data-page="contact"] .form-action-row button#form-submit:hover span{
+ color:#251b13!important;border-color:#49311c;transform:rotate(40deg);
+}
+body[data-page="contact"] .form-action-row button#form-submit:focus-visible{
+ outline:2px solid var(--form-gold);outline-offset:4px;
+}
+body[data-page="contact"] .form-action-row button#form-submit:disabled{
+ opacity:.6;cursor:not-allowed;box-shadow:none!important;transform:none!important;
+}
+body[data-page="contact"] .form-success{
+ padding:48px 10px 35px!important;text-align:center;
+}
+body[data-page="contact"] .form-success h3{
+ color:var(--form-ink)!important;
+ font:400 clamp(37px,4vw,54px)/1.1 'Italiana',Georgia,serif!important;
+}
+body[data-page="contact"] .form-success p{color:var(--form-muted)!important}
+body[data-page="contact"] .form-success .line-link{color:var(--form-gold)!important}
+/* Dark theme is just as intentional as light. */
+html[data-ems-theme="dark"] body[data-page="contact"] .contact-form-section{
+ --atelier-gold:#d9b782;--atelier-ink:#efe6d9;
+ --atelier-muted:#c3b39f;--atelier-line:rgba(227,190,138,.25);
+ background:radial-gradient(ellipse at 78% 21%,rgba(173,122,64,.13),transparent 53%),#201b16!important;
+}
+html[data-ems-theme="dark"] body[data-page="contact"] .form-surface{
+ --form-ink:#f1e7d7;--form-muted:#bda98f;--form-gold:#d6b17b;
+ --form-rule:rgba(224,185,126,.31);--form-hint:#aea08e;
+ background:linear-gradient(145deg,rgba(67,57,47,.62),rgba(28,24,20,.77))!important;
+ border-color:rgba(214,178,124,.35)!important;
+ box-shadow:0 25px 63px rgba(0,0,0,.21),inset 0 1px rgba(255,255,255,.08)!important;
+}
+html[data-ems-theme="dark"] body[data-page="contact"] .wix-live-form .field select option{
+ background:#2d271f;color:#f0e6d8;
+}
+html[data-ems-theme="dark"] body[data-page="contact"] .form-action-row button#form-submit:hover{
+ background:#d3ab73!important;
+}
+/* Responsive without the previous large empty rectangular bottom. */
+@media(max-width:1050px){
+ body[data-page="contact"] .contact-form-layout{
+  gap:clamp(27px,3vw,43px)!important;
+ }
+ body[data-page="contact"] .form-editorial h2{
+  font-size:clamp(43px,5vw,66px)!important;
+ }
+}
+@media(max-width:850px){
+ body[data-page="contact"] .contact-form-layout{
+  grid-template-columns:minmax(0,1fr)!important;
+  gap:34px!important;
+ }
+ body[data-page="contact"] .form-editorial{max-width:720px}
+ body[data-page="contact"] .form-editorial h2{
+  margin:15px 0 15px!important;
+  font-size:clamp(46px,8vw,72px)!important;
+ }
+ body[data-page="contact"] .form-editorial > p{margin-bottom:22px!important}
+ body[data-page="contact"] .form-contact-note{padding:12px 0!important}
+}
+@media(max-width:580px){
+ body[data-page="contact"] .contact-form-section{padding:58px 0 75px!important}
+ body[data-page="contact"] .form-surface{
+  padding:25px 19px!important;border-radius:3px 22px 3px 3px!important;
+ }
+ body[data-page="contact"] .wix-live-form{
+  grid-template-columns:minmax(0,1fr)!important;
+  gap:23px!important;
+ }
+ body[data-page="contact"] .wix-live-form .field,
+ body[data-page="contact"] .wix-live-form .field.wide{grid-column:1/-1!important}
+ body[data-page="contact"] .ems-concierge-heading h3{
+  font-size:clamp(37px,9vw,49px)!important;
+ }
+ body[data-page="contact"] .form-action-row{
+  display:flex;align-items:stretch;flex-direction:column;
+ }
+ body[data-page="contact"] .form-action-row .form-global-error{flex:0 1 auto}
+ body[data-page="contact"] .form-action-row button#form-submit{
+  width:100%!important;min-width:0!important;
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ body[data-page="contact"] .form-action-row button#form-submit,
+ body[data-page="contact"] .form-action-row button#form-submit span,
+ body[data-page="contact"] .wix-live-form .field{
+  transition:none!important;transform:none!important;
+ }
+}

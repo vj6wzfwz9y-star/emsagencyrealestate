@@ -1,0 +1,165 @@
+/* EMS Agency | Glass CTA edition — home page.
+   Primary and secondary navigation have a premium frosted-glass surface,
+   seamless gold fill on hover/focus/press, and matching capsule shape. */
+body[data-page="home"] .hero-controls > a,
+body[data-page="home"] .about-copy a.btn-dark,
+body[data-page="home"] .feature-copy a.btn-outline-light,
+body[data-page="home"] .contact-actions > a.btn-gold,
+body[data-page="home"] .contact-actions > a.btn-underlined{
+  --ems-glass-text:#fbf4e8;
+  --ems-glass-border:rgba(246,228,194,.55);
+  --ems-glass-surface:rgba(255,255,255,.115);
+  --ems-glass-icon-border:rgba(251,235,207,.48);
+  appearance:none;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:clamp(17px,3vw,33px)!important;
+  min-height:56px!important;
+  width:auto!important;
+  max-width:100%;
+  padding:8px 10px 8px 21px!important;
+  border:1px solid var(--ems-glass-border)!important;
+  border-radius:999px!important;
+  background:var(--ems-glass-surface)!important;
+  color:var(--ems-glass-text)!important;
+  box-shadow:0 12px 32px rgba(11,10,8,.13),
+             inset 0 1px 0 rgba(255,255,255,.23)!important;
+  -webkit-backdrop-filter:blur(17px) saturate(140%);
+  backdrop-filter:blur(17px) saturate(140%);
+  text-decoration:none!important;
+  font:750 11px/1.3 'Manrope','DM Sans',sans-serif!important;
+  letter-spacing:.016em!important;
+  text-align:left;
+  white-space:normal;
+  cursor:pointer;
+  transition:background-color .35s ease,
+             border-color .35s ease,color .35s ease,
+             box-shadow .35s ease,transform .35s ease!important;
+}
+body[data-page="home"] .hero-controls > a > span,
+body[data-page="home"] .about-copy a.btn-dark > span,
+body[data-page="home"] .feature-copy a.btn-outline-light > span,
+body[data-page="home"] .contact-actions > a.btn-gold > span,
+body[data-page="home"] .contact-actions > a.btn-underlined > span{
+  flex:0 0 35px;
+  display:grid!important;
+  place-items:center;
+  width:35px!important;
+  height:35px!important;
+  margin:0!important;
+  border:1px solid var(--ems-glass-icon-border)!important;
+  border-radius:50%!important;
+  font-size:19px!important;
+  font-weight:400!important;
+  line-height:1!important;
+  transition:background-color .3s ease,border-color .3s ease,
+             transform .3s ease!important;
+}
+body[data-page="home"] .hero-controls > a:hover,
+body[data-page="home"] .hero-controls > a:focus-visible,
+body[data-page="home"] .about-copy a.btn-dark:hover,
+body[data-page="home"] .about-copy a.btn-dark:focus-visible,
+body[data-page="home"] .feature-copy a.btn-outline-light:hover,
+body[data-page="home"] .feature-copy a.btn-outline-light:focus-visible,
+body[data-page="home"] .contact-actions > a.btn-gold:hover,
+body[data-page="home"] .contact-actions > a.btn-gold:focus-visible,
+body[data-page="home"] .contact-actions > a.btn-underlined:hover,
+body[data-page="home"] .contact-actions > a.btn-underlined:focus-visible{
+  background:#d5b77c!important;
+  border-color:#d5b77c!important;
+  color:#241c11!important;
+  box-shadow:0 14px 30px rgba(22,17,12,.21),
+             inset 0 1px 0 rgba(255,255,255,.44)!important;
+  transform:translateY(-2px)!important;
+}
+body[data-page="home"] .hero-controls > a:hover > span,
+body[data-page="home"] .hero-controls > a:focus-visible > span,
+body[data-page="home"] .about-copy a.btn-dark:hover > span,
+body[data-page="home"] .about-copy a.btn-dark:focus-visible > span,
+body[data-page="home"] .feature-copy a.btn-outline-light:hover > span,
+body[data-page="home"] .feature-copy a.btn-outline-light:focus-visible > span,
+body[data-page="home"] .contact-actions > a.btn-gold:hover > span,
+body[data-page="home"] .contact-actions > a.btn-gold:focus-visible > span,
+body[data-page="home"] .contact-actions > a.btn-underlined:hover > span,
+body[data-page="home"] .contact-actions > a.btn-underlined:focus-visible > span{
+  border-color:rgba(51,36,16,.55)!important;
+  background:rgba(55,39,20,.10)!important;
+  transform:rotate(35deg);
+}
+body[data-page="home"] .hero-controls > a:focus-visible,
+body[data-page="home"] .about-copy a.btn-dark:focus-visible,
+body[data-page="home"] .feature-copy a.btn-outline-light:focus-visible,
+body[data-page="home"] .contact-actions > a:focus-visible{
+  outline:2px solid #eaca90!important;outline-offset:3px!important;
+}
+body[data-page="home"] .hero-controls > a:active,
+body[data-page="home"] .about-copy a.btn-dark:active,
+body[data-page="home"] .feature-copy a.btn-outline-light:active,
+body[data-page="home"] .contact-actions > a:active{
+  background:#d5b77c!important;color:#241c11!important;
+  transform:translateY(0)!important;
+}
+
+/* On pale editorial areas, keep contrast high while retaining the same glass. */
+body[data-page="home"] .about-copy a.btn-dark{
+  --ems-glass-text:#392d20;
+  --ems-glass-border:rgba(148,112,66,.48);
+  --ems-glass-icon-border:rgba(148,112,66,.54);
+  --ems-glass-surface:rgba(210,189,158,.15);
+}
+html[data-ems-theme="light"] body[data-page="home"] .hero-controls > a,
+html[data-ems-theme="light"] body[data-page="home"] .about-copy a.btn-dark,
+html[data-ems-theme="light"] body[data-page="home"] .contact-actions > a{
+  --ems-glass-text:#342a20;
+  --ems-glass-border:rgba(142,108,67,.52);
+  --ems-glass-icon-border:rgba(142,108,67,.55);
+  --ems-glass-surface:rgba(255,255,255,.43);
+  box-shadow:0 10px 30px rgba(70,48,27,.12),
+             inset 0 1px 0 rgba(255,255,255,.57)!important;
+}
+html[data-ems-theme="light"] body[data-page="home"] .hero-controls > a:hover,
+html[data-ems-theme="light"] body[data-page="home"] .hero-controls > a:focus-visible,
+html[data-ems-theme="light"] body[data-page="home"] .about-copy a.btn-dark:hover,
+html[data-ems-theme="light"] body[data-page="home"] .about-copy a.btn-dark:focus-visible,
+html[data-ems-theme="light"] body[data-page="home"] .contact-actions > a:hover,
+html[data-ems-theme="light"] body[data-page="home"] .contact-actions > a:focus-visible{
+  background:#d5b77c!important;
+  color:#241c11!important;
+  border-color:#d5b77c!important;
+}
+@media(max-width:560px){
+  body[data-page="home"] .hero-controls{
+    gap:12px!important;align-items:flex-start!important;
+  }
+  body[data-page="home"] .hero-controls > a,
+  body[data-page="home"] .about-copy a.btn-dark,
+  body[data-page="home"] .feature-copy a.btn-outline-light,
+  body[data-page="home"] .contact-actions > a.btn-gold,
+  body[data-page="home"] .contact-actions > a.btn-underlined{
+    min-height:50px!important;
+    padding:7px 8px 7px 15px!important;
+    gap:17px!important;
+    font-size:10px!important;
+  }
+  body[data-page="home"] .hero-controls > a > span,
+  body[data-page="home"] .about-copy a.btn-dark > span,
+  body[data-page="home"] .feature-copy a.btn-outline-light > span,
+  body[data-page="home"] .contact-actions > a > span{
+    flex-basis:31px;width:31px!important;height:31px!important;
+    font-size:16px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  body[data-page="home"] .hero-controls > a,
+  body[data-page="home"] .hero-controls > a > span,
+  body[data-page="home"] .about-copy a.btn-dark,
+  body[data-page="home"] .about-copy a.btn-dark > span,
+  body[data-page="home"] .feature-copy a.btn-outline-light,
+  body[data-page="home"] .feature-copy a.btn-outline-light > span,
+  body[data-page="home"] .contact-actions > a,
+  body[data-page="home"] .contact-actions > a > span{
+    transition:none!important;
+    transform:none!important;
+  }
+}

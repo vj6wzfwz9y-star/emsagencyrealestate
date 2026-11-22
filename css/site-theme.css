@@ -1,0 +1,310 @@
+/* EMS AGENCY · DAY & NIGHT
+   Controls ALL major backgrounds, copy and interactive surfaces without touching Wix CMS imagery. */
+html[data-ems-theme="dark"]{
+  --ems-surface:#191611;--ems-surface-alt:#242019;--ems-ink:#f4ede2;
+  --ems-muted:#c2b39f;--ems-edge:rgba(223,195,150,.24);--ems-gold:#cda976;
+  color-scheme:dark;
+}
+html[data-ems-theme="light"]{
+  --ems-surface:#f7f3ed;--ems-surface-alt:#ebe4d8;--ems-ink:#29231c;
+  --ems-muted:#6d6050;--ems-edge:#c9bda9;--ems-gold:#aa8352;
+  color-scheme:light;
+}
+html[data-ems-theme] body{
+  background:var(--ems-surface)!important;
+  color:var(--ems-ink);
+  transition:background-color .36s ease,color .36s ease;
+}
+html[data-ems-theme] body main{color:inherit}
+html[data-ems-theme] .section-kicker,
+html[data-ems-theme] .section-kicker.dark{color:var(--ems-gold)}
+/* Dark: cohesive charcoal surfaces, including areas originally displayed as cream */
+html[data-ems-theme="dark"] .properties-section,
+html[data-ems-theme="dark"] .destinations-section,
+html[data-ems-theme="dark"] .collection-section,
+html[data-ems-theme="dark"] .dest-editorial,
+html[data-ems-theme="dark"] .about-section,
+html[data-ems-theme="dark"] .contact-form-section,
+html[data-ems-theme="dark"] .detail-page,
+html[data-ems-theme="dark"] .ems-cinema-story,
+html[data-ems-theme="dark"] .contact-stage,
+html[data-ems-theme="dark"] .ems-final-contact{
+  background-color:#191611;
+  color:#f4ede2;
+  transition:background-color .36s ease,color .36s ease;
+}
+html[data-ems-theme="dark"] .destinations-section,
+html[data-ems-theme="dark"] .dest-editorial,
+html[data-ems-theme="dark"] .about-section,
+html[data-ems-theme="dark"] .contact-form-section,
+html[data-ems-theme="dark"] .detail-page,
+html[data-ems-theme="dark"] .collection-section{background:#211d18}
+html[data-ems-theme="dark"] .properties-section{background:#171511}
+html[data-ems-theme="dark"] .destinations-section .destinations-head-copy,
+html[data-ems-theme="dark"] .section-heading-side p,
+html[data-ems-theme="dark"] .dest-intro p,
+html[data-ems-theme="dark"] .about-copy p,
+html[data-ems-theme="dark"] .form-editorial p,
+html[data-ems-theme="dark"] .detail-info p,
+html[data-ems-theme="dark"] .detail-location,
+html[data-ems-theme="dark"] .detail-crumbs,
+html[data-ems-theme="dark"] .detail-loading,
+html[data-ems-theme="dark"] .contact-intro>p,
+html[data-ems-theme="dark"] .form-contact-note p,
+html[data-ems-theme="dark"] .foot-brand p,
+html[data-ems-theme="dark"] .foot-strip{color:#c1b3a1}
+html[data-ems-theme="dark"] .collection-top,
+html[data-ems-theme="dark"] .collection-controls,
+html[data-ems-theme="dark"] .dest-intro h2,
+html[data-ems-theme="dark"] .about-copy h2,
+html[data-ems-theme="dark"] .form-editorial h2,
+html[data-ems-theme="dark"] .detail-intro h1,
+html[data-ems-theme="dark"] .detail-info h2{color:#f4ecdd}
+html[data-ems-theme="dark"] .collection-controls{border-color:#665746}
+html[data-ems-theme="dark"] .collection-tabs button{color:#b5aa9b}
+html[data-ems-theme="dark"] .collection-tabs button.chosen{color:#f2e9d8;border-color:#c9a773}
+html[data-ems-theme="dark"] .collection-count,
+html[data-ems-theme="dark"] .sort-label{color:#c7a574}
+html[data-ems-theme="dark"] .filters,
+html[data-ems-theme="dark"] .filters label,
+html[data-ems-theme="dark"] .form-card,
+html[data-ems-theme="dark"] .form-contact-note{background:#2a251e;border-color:#5f5242;color:#e6d6bd}
+html[data-ems-theme="dark"] .filters label{background:transparent}
+html[data-ems-theme="dark"] .filters select,
+html[data-ems-theme="dark"] .sort-label select,
+html[data-ems-theme="dark"] .form-card input,
+html[data-ems-theme="dark"] .form-card select,
+html[data-ems-theme="dark"] .form-card textarea,
+html[data-ems-theme="dark"] .form-editorial input,
+html[data-ems-theme="dark"] .form-editorial select,
+html[data-ems-theme="dark"] .form-editorial textarea{
+  color:#f7eee1;background:#322b22;accent-color:#cda976;
+}
+html[data-ems-theme="dark"] .filters select,
+html[data-ems-theme="dark"] .sort-label select{background:transparent}
+html[data-ems-theme="dark"] select option{background:#29241f;color:#f4ead9}
+html[data-ems-theme="dark"] input::placeholder,
+html[data-ems-theme="dark"] textarea::placeholder{color:#a99b89}
+html[data-ems-theme="dark"] .detail-amenities span{border-color:#6c5844}
+html[data-ems-theme="dark"] .detail-facilities span{background:#342d24;color:#f4eadb}
+html[data-ems-theme="dark"] .empty-inline{border-color:#8b795c}
+html[data-ems-theme="dark"] .empty-inline p{color:#baac99}
+html[data-ems-theme="dark"] .ems-expo-tail{border-color:#b99c70}
+/* Dark cover strip: override the high-specificity cover stylesheet. */
+html[data-ems-theme="dark"] #home-grid.ems-cover-showcase .ems-expo-tail,
+html[data-ems-theme="dark"] #catalogue-grid.ems-cover-showcase .ems-expo-tail{
+  background:#2b251e;color:#eee4d3;border-color:#b69a6d
+}
+html[data-ems-theme="dark"] #home-grid.ems-cover-showcase .ems-expo-specs,
+html[data-ems-theme="dark"] #catalogue-grid.ems-cover-showcase .ems-expo-specs{color:#c6b7a1}
+html[data-ems-theme="dark"] #home-grid.ems-cover-showcase .ems-expo-price small,
+html[data-ems-theme="dark"] #catalogue-grid.ems-cover-showcase .ems-expo-price small{color:#bca98f}
+html[data-ems-theme="dark"] #home-grid.ems-cover-showcase .ems-expo-price strong,
+html[data-ems-theme="dark"] #catalogue-grid.ems-cover-showcase .ems-expo-price strong{color:#e0bf87}
+html[data-ems-theme="dark"] #home-grid.ems-cover-showcase .ems-expo-cta,
+html[data-ems-theme="dark"] #catalogue-grid.ems-cover-showcase .ems-expo-cta{color:#f4e9d7}
+/* Light mode: spacious warm ivory base with gold typography and photography preserved. */
+html[data-ems-theme="light"] .properties-section,
+html[data-ems-theme="light"] .destinations-section,
+html[data-ems-theme="light"] .collection-section,
+html[data-ems-theme="light"] .dest-editorial,
+html[data-ems-theme="light"] .about-section,
+html[data-ems-theme="light"] .contact-form-section,
+html[data-ems-theme="light"] .detail-page,
+html[data-ems-theme="light"] .ems-cinema-story,
+html[data-ems-theme="light"] .contact-stage,
+html[data-ems-theme="light"] .ems-final-contact{
+  background:#f7f3ed;
+  color:#29231c;
+  transition:background-color .36s ease,color .36s ease;
+}
+html[data-ems-theme="light"] .properties-section,
+html[data-ems-theme="light"] .ems-cinema-story{background:#eae3d6}
+html[data-ems-theme="light"] .destinations-section,
+html[data-ems-theme="light"] .contact-form-section{background:#fcfaf6}
+html[data-ems-theme="light"] .ems-cinema-topline,
+html[data-ems-theme="light"] .ems-cinema-footerline{color:#7d6548}
+html[data-ems-theme="light"] .ems-cinema-footerline{border-color:#c9b698}
+html[data-ems-theme="light"] .section-heading-side p,
+html[data-ems-theme="light"] .destinations-head-copy{color:#655848}
+html[data-ems-theme="light"] .section-heading-row h2,
+html[data-ems-theme="light"] .collection-top h2{color:#2d241c}
+html[data-ems-theme="light"] .filters{background:#fffdf9}
+html[data-ems-theme="light"] .hero,
+html[data-ems-theme="light"] .inner-hero{
+  background:#e8e1d6;
+  color:#30261c;
+}
+html[data-ems-theme="light"] .hero-overlay{
+  background:linear-gradient(90deg,rgba(250,247,239,.97) 0%,rgba(246,241,231,.88) 46%,rgba(248,244,237,.35) 100%),
+    linear-gradient(0deg,rgba(251,247,239,.50),transparent 39%);
+}
+html[data-ems-theme="light"] .inner-hero-overlay{
+  background:linear-gradient(90deg,rgba(251,248,241,.95) 0%,rgba(248,243,233,.89) 54%,rgba(245,240,230,.28) 100%),
+    linear-gradient(0deg,rgba(253,248,238,.45),transparent 50%);
+}
+html[data-ems-theme="light"] .hero h1,
+html[data-ems-theme="light"] .inner-hero-content h1{color:#2a231b;text-shadow:none}
+html[data-ems-theme="light"] .hero-main>p,
+html[data-ems-theme="light"] .inner-hero-content>p{color:#584b3b}
+html[data-ems-theme="light"] .hero-label,
+html[data-ems-theme="light"] .inner-hero-meta,
+html[data-ems-theme="light"] .hero-bottom,
+html[data-ems-theme="light"] .hero-index{color:#705638}
+html[data-ems-theme="light"] .hero .btn-text-light{color:#3e3427;border-color:#b8a38a}
+html[data-ems-theme="light"] .scroll-track{border-color:#856d4f}
+html[data-ems-theme="light"] .scroll-track:after{color:#876438}
+html[data-ems-theme="light"] .hero-pager button{color:#3d2e1e;border-color:#aa9370}
+html[data-ems-theme="light"] .pager-track{background:#b6a186}
+html[data-ems-theme="light"] .feature-section{background:#ece5da;color:#261f17}
+html[data-ems-theme="light"] .feature-tint{
+  background:linear-gradient(90deg,rgba(249,246,238,.94),rgba(247,243,234,.77) 53%,rgba(248,244,236,.27));
+}
+html[data-ems-theme="light"] .feature-inner p,
+html[data-ems-theme="light"] .feature-index{color:#67543f}
+html[data-ems-theme="light"] .contact-stage,
+html[data-ems-theme="light"] .ems-final-contact{
+  background:radial-gradient(ellipse at 73% 38%,rgba(195,156,92,.15),transparent 47%),#ece5d9;
+  color:#2b241b;
+}
+html[data-ems-theme="light"] .contact-intro>p,
+html[data-ems-theme="light"] .ems-final-contact .contact-intro>p{color:#655646}
+html[data-ems-theme="light"] .contact-intro h1,
+html[data-ems-theme="light"] .ems-final-contact .contact-intro h2{color:#2d241a}
+html[data-ems-theme="light"] .contact-intro h1 em,
+html[data-ems-theme="light"] .ems-final-contact .contact-intro h2 em{color:#a58251}
+html[data-ems-theme="light"] .contact-city-tags a{color:#64533e;border-color:rgba(128,102,66,.35)}
+html[data-ems-theme="light"] .contact-city-tags a:hover{background:rgba(186,156,99,.15)}
+html[data-ems-theme="light"] .contact-actions .btn-underlined{color:#423324;border-color:#9b855d}
+html[data-ems-theme="light"] .art-outer::before,
+html[data-ems-theme="light"] .art-outer::after{border-color:rgba(169,137,82,.25)}
+html[data-ems-theme="light"] .art-card{
+  background:linear-gradient(135deg,rgba(255,254,250,.82),rgba(240,229,207,.65));
+  border-color:rgba(153,124,80,.30);
+  box-shadow:0 29px 75px #9b806135;color:#322619
+}
+html[data-ems-theme="light"] .art-card h2{color:#2e241a}
+html[data-ems-theme="light"] .art-card>p{color:#76644c}
+html[data-ems-theme="light"] .art-card-top{color:#8d7147}
+html[data-ems-theme="light"] .art-float{
+  background:rgba(253,250,244,.90);color:#67502f;border-color:rgba(168,128,70,.36);
+}
+html[data-ems-theme="light"] .art-card::after{opacity:.3}
+html[data-ems-theme="light"] .contact-stage .section-kicker{color:#a47c45}
+html[data-ems-theme="light"] .contact-form-section .form-contact-note{border-color:#d7c9b7}
+/* Light mode keeps the photo cover titles white for contrast and makes its
+   detail ribbons cream, preserving photographic drama. */
+html[data-ems-theme="light"] #home-grid.ems-cover-showcase .ems-expo-tail,
+html[data-ems-theme="light"] #catalogue-grid.ems-cover-showcase .ems-expo-tail{
+  background:#f5efe5;color:#2e241b;border-color:#b69a70;
+}
+html[data-ems-theme="light"] #home-grid.ems-cover-showcase .ems-expo-price strong,
+html[data-ems-theme="light"] #catalogue-grid.ems-cover-showcase .ems-expo-price strong{color:#8f6739}
+html[data-ems-theme="light"] #home-grid.ems-cover-showcase .ems-expo-cta,
+html[data-ems-theme="light"] #catalogue-grid.ems-cover-showcase .ems-expo-cta{color:#241d15}
+/* Footer is part of the chosen theme; original logo asset swaps without distortion */
+html[data-ems-theme="light"] .global-footer{background:#e5ded2;color:#28231b}
+html[data-ems-theme="light"] .foot-brand p{color:#756657}
+html[data-ems-theme="light"] .foot-links a{color:#413427}
+html[data-ems-theme="light"] .foot-links span{color:#8d6941}
+html[data-ems-theme="light"] .foot-strip{color:#766757;border-color:#bda78b}
+html[data-ems-theme="light"] .foot-links .ems-instagram-footer{color:#8d6a3c}
+html[data-ems-theme="light"] .foot-links a:hover{color:#9b783d}
+/* Dark mode footer stays rich and neutral. */
+html[data-ems-theme="dark"] .global-footer{background:#12100d;color:#f4e9d8}
+/* The fixed nav stays transparent; ink and original wordmark variants adapt. */
+html[data-ems-theme="light"] .global-header,
+html[data-ems-theme="light"] .global-header.scrolled,
+html[data-ems-theme="light"] .global-header.nav-on-dark,
+html[data-ems-theme="light"] .global-header.nav-on-light{
+  --nav-ink:#282016;--nav-muted:rgba(45,37,29,.88);--nav-line:rgba(61,49,34,.40);
+}
+html[data-ems-theme="dark"] .global-header,
+html[data-ems-theme="dark"] .global-header.scrolled,
+html[data-ems-theme="dark"] .global-header.nav-on-dark,
+html[data-ems-theme="dark"] .global-header.nav-on-light{
+  --nav-ink:#fbf4e8;--nav-muted:rgba(246,238,222,.89);--nav-line:rgba(248,232,210,.45);
+}
+html[data-ems-theme="light"] .global-header .ems-logo-on-dark{opacity:0!important;visibility:hidden!important}
+html[data-ems-theme="light"] .global-header .ems-logo-on-light{opacity:1!important;visibility:visible!important}
+html[data-ems-theme="dark"] .global-header .ems-logo-on-dark{opacity:1!important;visibility:visible!important}
+html[data-ems-theme="dark"] .global-header .ems-logo-on-light{opacity:0!important;visibility:hidden!important}
+html[data-ems-theme="light"] .global-header .main-nav a:hover,
+html[data-ems-theme="light"] .global-header .main-nav a.active{color:#947141!important}
+html[data-ems-theme="dark"] .global-header .main-nav a:hover,
+html[data-ems-theme="dark"] .global-header .main-nav a.active{color:#e6c38e!important}
+/* In light mode the navbar remains transparent, with no heavy bar. */
+html[data-ems-theme="light"] .global-header,
+html[data-ems-theme="light"] .global-header.scrolled{
+  background:transparent!important;
+  backdrop-filter:none!important;
+  box-shadow:none!important;
+}
+html[data-ems-theme="light"] .global-header .mobile-menu.open,
+html[data-ems-theme="light"] .global-header .mobile-menu{
+  background:#f4efe5!important;
+}
+html[data-ems-theme="light"] .global-header .mobile-menu a{color:#292117!important;border-color:#cbb9a2!important}
+html[data-ems-theme="light"] .global-header .mobile-menu a span{color:#a5804f!important}
+html[data-ems-theme="dark"] .global-header .mobile-menu,
+html[data-ems-theme="dark"] .global-header .mobile-menu.open{background:#16130f!important}
+/* Premium segmented mode switch: tap the sun or moon at the top of any page. */
+.ems-theme-toggle{
+  position:relative;display:inline-flex;align-items:center;justify-content:center;
+  gap:3px;flex:0 0 auto;min-width:89px;height:42px;padding:4px;
+  border-radius:30px;border:1px solid var(--nav-line,rgba(230,219,200,.55));
+  background:rgba(145,124,88,.10);
+  backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);
+  box-shadow:0 6px 22px #0000000a;
+  transition:border-color .3s ease,background .3s ease;
+  z-index:105;
+}
+.ems-theme-toggle button{
+  display:grid;place-items:center;flex:0 0 36px;width:36px;height:33px;
+  border:0;border-radius:26px;background:transparent;
+  color:var(--nav-ink,#f7f0e7);
+  cursor:pointer;font-family:Arial,sans-serif;
+  font-weight:600;font-size:20px;line-height:1;
+  transition:background .25s ease,transform .25s ease,color .25s ease;
+}
+.ems-theme-toggle button:hover{transform:scale(1.08)}
+.ems-theme-toggle button[aria-pressed="true"]{
+  background:#d3b07a;color:#251c13;box-shadow:0 2px 12px rgba(15,12,7,.14);
+}
+.ems-theme-toggle button:focus-visible{
+  outline:2px solid #ddb478;outline-offset:3px;
+}
+.ems-theme-toggle .ems-mode-sun{font-size:19px}
+.ems-theme-toggle .ems-mode-moon{font-size:21px}
+.global-header .head-actions{gap:clamp(9px,1.6vw,22px)}
+@media(max-width:850px){
+ .global-header .head-inner{gap:10px}
+ .global-header .ems-theme-toggle{min-width:85px;height:40px}
+ .global-header .ems-theme-toggle button{width:34px;height:32px;flex-basis:34px}
+ .global-header .head-actions{gap:11px}
+}
+@media(max-width:375px){
+ .global-header .head-inner{width:calc(100% - 24px)!important}
+ .global-header .head-actions{gap:8px}
+ .global-header .ems-theme-toggle{min-width:75px;gap:0}
+ .global-header .ems-theme-toggle button{width:32px;height:31px;flex-basis:32px}
+}
+/* Owner entry follows visitor preferences without changing secured Wix dashboard */
+.admin-body .ems-admin-theme-actions{display:flex;align-items:center;gap:18px}
+.admin-body .ems-theme-toggle{--nav-ink:var(--ems-ink);--nav-line:var(--ems-edge)}
+html[data-ems-theme="dark"] .admin-body{background:#1d1914;color:#f4e9dc}
+html[data-ems-theme="dark"] .admin-content{background:#211c16}
+html[data-ems-theme="dark"] .admin-head a{color:#d4c0a6}
+html[data-ems-theme="dark"] .admin-center>p{color:#c1b19c}
+html[data-ems-theme="dark"] .admin-choices>a{background:#2c251d;border-color:#60513d;color:#f1e8da}
+html[data-ems-theme="dark"] .admin-choices>a:hover{border-color:#bd9b6f}
+html[data-ems-theme="dark"] .admin-choices small{color:#b8a690}
+html[data-ems-theme="dark"] .admin-privacy{color:#ab9986}
+@media(max-width:600px){.admin-body .ems-admin-theme-actions{gap:10px}}
+@media(prefers-reduced-motion:reduce){
+ html[data-ems-theme] body,
+ html[data-ems-theme] .properties-section,
+ html[data-ems-theme] .contact-stage,
+ html[data-ems-theme] .ems-cinema-story,
+ .ems-theme-toggle,.ems-theme-toggle button{transition:none!important}
+}

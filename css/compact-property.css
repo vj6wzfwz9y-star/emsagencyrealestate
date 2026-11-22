@@ -1,0 +1,257 @@
+/* EMS AGENCY / COMPACT EDITORIAL PROPERTY CARDS — 2026
+   Make project previews noticeably shorter while keeping 3:4 photos complete.
+   No CMS values, images, property links, or gallery functionality are changed. */
+@media (min-width:941px){
+  #home-grid.ems-cover-showcase .ems-expo,
+  #home-grid.ems-cover-showcase .ems-expo--lead,
+  #catalogue-grid.ems-cover-showcase .ems-expo,
+  #catalogue-grid.ems-cover-showcase .ems-expo:nth-child(even){
+    box-sizing:border-box!important;
+    justify-self:center!important;
+    width:100%!important;
+    max-width:1100px!important;
+    min-height:0!important;
+    grid-template-columns:minmax(0,40fr) minmax(0,60fr)!important;
+    grid-template-rows:auto!important;
+    margin-inline:auto!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-image,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-image,
+  #catalogue-grid.ems-cover-showcase .ems-expo-image,
+  #catalogue-grid.ems-cover-showcase .ems-expo:nth-child(even) .ems-expo-image{
+    grid-column:1!important;grid-row:1!important;
+    width:100%!important;min-width:0!important;
+    height:auto!important;min-height:0!important;
+    aspect-ratio:3/4!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-story,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-story,
+  #catalogue-grid.ems-cover-showcase .ems-expo-story,
+  #catalogue-grid.ems-cover-showcase .ems-expo:nth-child(even) .ems-expo-story{
+    grid-column:2!important;grid-row:1!important;
+    min-width:0!important;min-height:0!important;
+    padding:clamp(19px,2.05vw,26px) clamp(21px,2.25vw,30px)!important;
+    margin:0!important;
+    display:flex!important;flex-direction:column!important;
+    justify-content:flex-start!important;align-items:stretch!important;
+    gap:0!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-small,
+  #catalogue-grid.ems-cover-showcase .ems-expo-small{
+    padding-bottom:9px!important;
+    font-size:8px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-title,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-title,
+  #catalogue-grid.ems-cover-showcase .ems-expo-title{
+    margin:13px 0 7px!important;
+    padding:0!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-title h3,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-title h3,
+  #catalogue-grid.ems-cover-showcase .ems-expo-title h3,
+  #catalogue-grid.ems-cover-showcase .ems-expo:nth-child(n+2) .ems-expo-title h3{
+    font-size:clamp(35px,3.7vw,51px)!important;
+    line-height:1.03!important;
+    letter-spacing:-.067em!important;
+    margin:7px 0 10px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-city,
+  #catalogue-grid.ems-cover-showcase .ems-expo-city{
+    font-size:9px!important;
+    letter-spacing:.14em!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-kind,
+  #catalogue-grid.ems-cover-showcase .ems-expo-kind{
+    font-size:9px!important;
+    letter-spacing:.095em!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek{
+    flex:0 0 auto!important;
+    margin:12px 0 10px!important;
+    padding:10px 0 0!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek-top,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek-top{
+    margin:0 0 8px!important;
+    font-size:8px!important;
+    letter-spacing:.08em!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek-grid,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek-grid{
+    width:100%!important;
+    max-width:530px!important;
+    gap:8px!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    justify-content:start!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek-photo,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek-photo{
+    width:100%!important;min-width:0!important;
+    aspect-ratio:3/4!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek-photo img,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek-photo img{
+    object-fit:contain!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-tail,
+  #catalogue-grid.ems-cover-showcase .ems-expo-tail{
+    margin-top:auto!important;
+    padding:12px 0 0!important;
+    gap:9px!important;
+    min-height:0!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-specs,
+  #catalogue-grid.ems-cover-showcase .ems-expo-specs{
+    font-size:9px!important;
+    margin:0!important;
+    min-height:0!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-bottom,
+  #catalogue-grid.ems-cover-showcase .ems-expo-bottom{
+    gap:12px!important;
+    align-items:center!important;
+    min-height:43px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-price strong,
+  #catalogue-grid.ems-cover-showcase .ems-expo-price strong{
+    font-size:clamp(18px,1.7vw,23px)!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-cta,
+  #catalogue-grid.ems-cover-showcase .ems-expo-cta{
+    display:inline-flex!important;align-items:center!important;
+    color:#34291d!important;
+    text-shadow:none!important;
+    white-space:nowrap;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-cta span,
+  #catalogue-grid.ems-cover-showcase .ems-expo-cta span{
+    display:inline!important;
+    color:#34291d!important;
+    font-size:9px!important;
+    font-weight:750!important;
+    opacity:1!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-cta b,
+  #catalogue-grid.ems-cover-showcase .ems-expo-cta b{
+    width:41px!important;height:41px!important;
+  }
+}
+/* Small laptop: keep side-by-side composition instead of a giant stacked cover. */
+@media (min-width:721px) and (max-width:940px){
+  #home-grid.ems-cover-showcase .ems-expo,
+  #home-grid.ems-cover-showcase .ems-expo--lead,
+  #catalogue-grid.ems-cover-showcase .ems-expo,
+  #catalogue-grid.ems-cover-showcase .ems-expo:nth-child(even){
+    grid-template-columns:minmax(0,39fr) minmax(0,61fr)!important;
+    grid-template-rows:auto!important;
+    max-width:900px!important;
+    margin-inline:auto!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-image,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-image,
+  #catalogue-grid.ems-cover-showcase .ems-expo-image,
+  #catalogue-grid.ems-cover-showcase .ems-expo:nth-child(even) .ems-expo-image{
+    grid-column:1!important;grid-row:1!important;
+    width:100%!important;height:auto!important;
+    aspect-ratio:3/4!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-story,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-story,
+  #catalogue-grid.ems-cover-showcase .ems-expo-story,
+  #catalogue-grid.ems-cover-showcase .ems-expo:nth-child(even) .ems-expo-story{
+    grid-column:2!important;grid-row:1!important;
+    padding:clamp(15px,2vw,22px)!important;
+    margin:0!important;height:100%!important;
+    display:flex!important;flex-direction:column!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-title,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-title,
+  #catalogue-grid.ems-cover-showcase .ems-expo-title{
+    margin:11px 0 6px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-title h3,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-title h3,
+  #catalogue-grid.ems-cover-showcase .ems-expo-title h3{
+    font-size:clamp(29px,3.7vw,37px)!important;
+    margin:6px 0 8px!important;
+    line-height:1.02!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-small,
+  #catalogue-grid.ems-cover-showcase .ems-expo-small{
+    font-size:8px!important;padding-bottom:7px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek{
+    margin:10px 0 8px!important;
+    padding-top:8px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek-top,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek-top{
+    font-size:7px!important;margin-bottom:7px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek-grid,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek-grid{
+    max-width:390px!important;
+    gap:7px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-tail,
+  #catalogue-grid.ems-cover-showcase .ems-expo-tail{
+    padding-top:9px!important;gap:8px!important;
+    margin-top:auto!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-cta span,
+  #catalogue-grid.ems-cover-showcase .ems-expo-cta span{
+    color:#34291d!important;
+  }
+}
+@media(max-width:720px){
+  /* Retain the established mobile one-column behavior, but narrow the
+     photograph so 3:4 photography doesn't produce a 900px-tall card. */
+  #home-grid.ems-cover-showcase .ems-expo,
+  #catalogue-grid.ems-cover-showcase .ems-expo{
+    max-width:510px!important;
+    margin-inline:auto!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-image,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-image,
+  #catalogue-grid.ems-cover-showcase .ems-expo-image,
+  #catalogue-grid.ems-cover-showcase .ems-expo:nth-child(even) .ems-expo-image{
+    width:min(100%,385px)!important;max-width:100%!important;
+    height:auto!important;aspect-ratio:3/4!important;
+    margin-inline:auto!important;
+    background:#e7ded1!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-story,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-story,
+  #catalogue-grid.ems-cover-showcase .ems-expo-story,
+  #catalogue-grid.ems-cover-showcase .ems-expo:nth-child(even) .ems-expo-story{
+    padding:clamp(18px,4.8vw,28px)!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-title,
+  #home-grid.ems-cover-showcase .ems-expo--lead .ems-expo-title,
+  #catalogue-grid.ems-cover-showcase .ems-expo-title{
+    margin:15px 0 11px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek{
+    margin:12px 0!important;padding-top:10px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-peek-top,
+  #catalogue-grid.ems-cover-showcase .ems-expo-peek-top{
+    margin-bottom:8px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-tail,
+  #catalogue-grid.ems-cover-showcase .ems-expo-tail{
+    padding-top:12px!important;gap:10px!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-cta,
+  #catalogue-grid.ems-cover-showcase .ems-expo-cta{
+    color:#34291d!important;
+  }
+  #home-grid.ems-cover-showcase .ems-expo-cta span,
+  #catalogue-grid.ems-cover-showcase .ems-expo-cta span{
+    color:#34291d!important;
+  }
+}

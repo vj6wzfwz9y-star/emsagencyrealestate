@@ -1,0 +1,282 @@
+/* EMS / polished interactive pills on property detail */
+.detail-page .detail-info .detail-amenities,
+.detail-page .detail-info .detail-facilities{
+ display:flex;flex-wrap:wrap;align-items:center;gap:10px 11px;margin-top:27px;
+}
+.detail-page .detail-info .ems-detail-pill{
+ appearance:none;-webkit-appearance:none;
+ display:inline-flex;align-items:center;justify-content:center;gap:8px;
+ min-height:45px;max-width:100%;padding:11px 19px;
+ border:1px solid #bda47f;border-radius:999px;
+ background:transparent;color:#473a2b;
+ box-shadow:none;
+ font:600 11px/1.35 'Manrope','DM Sans',sans-serif;
+ letter-spacing:.015em;text-align:center;white-space:normal;
+ cursor:pointer;user-select:none;
+ transition:background-color .27s ease,color .27s ease,
+  border-color .27s ease,transform .27s ease,box-shadow .27s ease;
+}
+.detail-page .detail-info .ems-detail-pill:hover{
+ background:#cbaa78;color:#251c14;border-color:#cbaa78;
+ transform:translateY(-2px);box-shadow:0 8px 20px #8f6b3b2b;
+}
+.detail-page .detail-info .ems-detail-pill[aria-pressed="true"]{
+ background:#977344;color:#fff7ec;border-color:#977344;
+ box-shadow:0 5px 13px #8f6b3b27;
+}
+.detail-page .detail-info .ems-detail-pill[aria-pressed="true"]:hover{
+ background:#cbaa78;color:#241c14;border-color:#cbaa78;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .ems-detail-pill{
+ background:#e3c18d10;color:#f0e6d6;border-color:#79644c;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .ems-detail-pill:hover{
+ background:#d6b37f;color:#241b12;border-color:#d6b37f;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .ems-detail-pill[aria-pressed="true"]{
+ background:#c09a63;color:#201912;border-color:#c09a63;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .ems-detail-pill[aria-pressed="true"]:hover{
+ background:#e0bb84;border-color:#e0bb84;
+}
+.detail-page .detail-info .detail-aside a{
+ display:inline-flex;justify-content:space-between;align-items:center;
+ gap:15px;min-height:57px;width:100%;
+ padding:10px 11px 10px 22px;
+ border:1px solid #d0ad77;border-radius:999px;
+ background:transparent;color:#e9cd9f;
+ font:750 11px/1.35 'Manrope','DM Sans',sans-serif;
+ letter-spacing:.07em;text-decoration:none;
+ cursor:pointer;transition:background-color .27s ease,
+ color .27s ease,border-color .27s ease,
+ transform .27s ease,box-shadow .27s ease;
+}
+.detail-page .detail-info .detail-aside a span{
+ display:grid;place-items:center;flex:0 0 36px;
+ width:36px;height:36px;border-radius:50%;
+ border:1px solid #c49d66;
+ font-size:18px;line-height:1;
+ transition:transform .25s,background-color .25s,border-color .25s;
+}
+.detail-page .detail-info .detail-aside a:hover{
+ background:#d5b17b;color:#211911;border-color:#d5b17b;
+ transform:translateY(-2px);box-shadow:0 9px 23px #0000003b;
+}
+.detail-page .detail-info .detail-aside a:hover span{
+ transform:rotate(45deg);
+ border-color:#382918;
+ background:#241a1014;
+}
+.detail-page .detail-info .ems-detail-pill:focus-visible,
+.detail-page .detail-info .detail-aside a:focus-visible{
+ outline:2px solid #dfb77c;outline-offset:3px;
+}
+@media(max-width:520px){
+ .detail-page .detail-info .ems-detail-pill{min-height:42px;padding:10px 15px;font-size:10px}
+ .detail-page .detail-info .detail-aside a{padding-left:17px;font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+ .detail-page .detail-info .ems-detail-pill,
+ .detail-page .detail-info .detail-aside a,
+ .detail-page .detail-info .detail-aside a span{
+  transition:none;transform:none;
+ }
+}
+
+/* EMS Agency / frosted glass property pricing panel (not opaque) */
+.detail-page .detail-info .detail-aside{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  align-self:start;
+  padding:clamp(25px,3vw,39px);
+  border-radius:23px;
+  border:1px solid rgba(255,255,255,.66);
+  background:linear-gradient(136deg,
+     rgba(255,255,255,.33) 0%,
+     rgba(255,255,255,.16) 48%,
+     rgba(218,207,191,.10) 100%);
+  -webkit-backdrop-filter:blur(24px) saturate(155%);
+  backdrop-filter:blur(24px) saturate(155%);
+  box-shadow:0 22px 48px rgba(69,52,31,.11),
+    inset 0 1px 0 rgba(255,255,255,.77),
+    inset 0 0 26px rgba(255,255,255,.10);
+  color:#29231b;
+}
+.detail-page .detail-info .detail-aside::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  border-radius:inherit;
+  background:radial-gradient(ellipse at 11% 2%,
+     rgba(255,255,255,.38) 0%,
+     rgba(255,255,255,0) 66%);
+  pointer-events:none;
+}
+.detail-page .detail-info .detail-aside small{
+  color:#987144;
+  font-size:10px;
+  line-height:1.55;
+  letter-spacing:.12em;
+}
+.detail-page .detail-info .detail-aside strong{
+  color:#9e7544;
+  font-size:clamp(24px,2.25vw,32px);
+  line-height:1.37;
+  margin:15px 0 14px;
+}
+.detail-page .detail-info .detail-aside p{
+  color:#65594b;
+  line-height:1.75;
+  overflow-wrap:anywhere;
+  margin-bottom:24px;
+}
+.detail-page .detail-info .detail-aside a{
+  color:#75532b;
+  border-color:rgba(168,125,69,.75);
+  background:rgba(255,255,255,.12);
+}
+.detail-page .detail-info .detail-aside a:hover{
+  background:#d5b17b;
+  color:#211911;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside{
+  border-color:rgba(240,229,206,.27);
+  background:linear-gradient(136deg,
+    rgba(255,255,255,.15) 0%,
+    rgba(255,255,255,.085) 50%,
+    rgba(255,255,255,.035) 100%);
+  box-shadow:0 22px 56px rgba(0,0,0,.23),
+    inset 0 1px 0 rgba(255,255,255,.32),
+    inset 0 -1px 0 rgba(255,255,255,.055);
+  color:#f6efe4;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside::before{
+  background:radial-gradient(ellipse at 8% 0%,
+    rgba(255,255,255,.16),rgba(255,255,255,0) 67%);
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside small{
+  color:#e0bd86;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside strong{
+  color:#efcb92;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside p{
+  color:#e3d6c4;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside a{
+  color:#f5dbb4;
+  border-color:rgba(224,181,121,.8);
+  background:rgba(255,255,255,.045);
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside a:hover{
+  color:#25190c;background:#ddba83;
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .detail-page .detail-info .detail-aside{
+    background:rgba(252,247,238,.69);
+  }
+  html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside{
+    background:rgba(84,76,64,.67);
+  }
+}
+
+
+/* EMS / GLASSMOTION 02 — transparent price card, subtle luxury loop.
+   No opaque solid block; preserve legibility and interactive visit button. */
+.detail-page .detail-info .detail-aside{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  border-radius:25px!important;
+  background:linear-gradient(143deg,
+    rgba(255,255,255,.47) 0%,
+    rgba(255,255,255,.22) 51%,
+    rgba(255,255,255,.11) 100%)!important;
+  border:1px solid rgba(255,255,255,.75)!important;
+  -webkit-backdrop-filter:blur(28px) saturate(142%)!important;
+  backdrop-filter:blur(28px) saturate(142%)!important;
+  box-shadow:0 21px 46px rgba(63,47,28,.12),
+    inset 0 1px 0 rgba(255,255,255,.80),
+    inset 0 0 28px rgba(255,255,255,.11)!important;
+  animation:emsPriceGlassFloat 9s ease-in-out infinite;
+  will-change:transform;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside{
+  background:linear-gradient(143deg,
+    rgba(255,255,255,.13) 0%,
+    rgba(255,255,255,.07) 52%,
+    rgba(255,255,255,.03) 100%)!important;
+  border-color:rgba(244,226,194,.34)!important;
+  box-shadow:0 24px 55px rgba(4,3,2,.26),
+    inset 0 1px 0 rgba(255,255,255,.30),
+    inset 0 0 28px rgba(255,255,255,.025)!important;
+}
+.detail-page .detail-info .detail-aside::before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  inset:-20%;
+  border-radius:inherit;
+  pointer-events:none;
+  background:radial-gradient(ellipse at 23% 18%,
+    rgba(255,255,255,.42) 0%,
+    rgba(255,255,255,.085) 27%,
+    transparent 62%);
+  opacity:.65;
+  animation:emsPriceGlassGlow 11s ease-in-out infinite;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside::before{
+  background:radial-gradient(ellipse at 20% 20%,
+    rgba(255,255,255,.18) 0%,rgba(214,178,115,.055) 32%,
+    transparent 65%);
+}
+.detail-page .detail-info .detail-aside::after{
+  content:"";
+  position:absolute;inset:-20% -50%;
+  z-index:0;
+  pointer-events:none;
+  background:linear-gradient(103deg,
+    transparent 38%,
+    rgba(255,255,255,.02) 44%,
+    rgba(255,255,255,.24) 49%,
+    rgba(255,255,255,.035) 54%,
+    transparent 61%);
+  transform:translate3d(-80%,0,0);
+  animation:emsPriceGlassShine 11s ease-in-out infinite;
+}
+html[data-ems-theme="dark"] .detail-page .detail-info .detail-aside::after{
+  opacity:.42;
+}
+.detail-page .detail-info .detail-aside > *{
+  position:relative;
+  z-index:1;
+}
+.detail-page .detail-info .detail-aside a{
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+}
+@keyframes emsPriceGlassFloat{
+  0%,100%{transform:translate3d(0,0,0)}
+  50%{transform:translate3d(0,-5px,0)}
+}
+@keyframes emsPriceGlassGlow{
+  0%,100%{opacity:.45;transform:translate3d(-7px,4px,0)}
+  50%{opacity:.8;transform:translate3d(9px,-6px,0)}
+}
+@keyframes emsPriceGlassShine{
+  0%,15%{transform:translate3d(-82%,0,0);opacity:0}
+  20%{opacity:.65}
+  48%{transform:translate3d(78%,0,0);opacity:.42}
+  55%,100%{transform:translate3d(78%,0,0);opacity:0}
+}
+@media(prefers-reduced-motion:reduce){
+  .detail-page .detail-info .detail-aside,
+  .detail-page .detail-info .detail-aside::before,
+  .detail-page .detail-info .detail-aside::after{
+    animation:none!important;
+    transform:none!important;
+    will-change:auto!important;
+  }
+}
