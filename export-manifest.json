@@ -1,0 +1,503 @@
+{
+  "project": "EMS Agency Real Estate",
+  "source": "https://headless-gblsqyllshf-fv2vvnt5jg-140a.wix-site-host.com/",
+  "original_site_files": 97,
+  "included_files": 99,
+  "files": [
+    {
+      "path": "GUIDE_GITHUB_VERCEL_DARIJA.md",
+      "bytes": 1362,
+      "sha256": "df9f0a8fa2b5b5a12ba46fe5ff9319575809c5481c20b5ab0f416c5e7a6452a3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2052,
+      "sha256": "933e34e8eb1a52fd52c07cb2d49c82e2e7a673e384112ce62a9fe9e84cbb6d9d"
+    },
+    {
+      "path": "admin.html",
+      "bytes": 4480,
+      "sha256": "61cce21afc9108c0f765f47e239d1acc052ffde35ba72925fb227c81cf698689"
+    },
+    {
+      "path": "agence.html",
+      "bytes": 7559,
+      "sha256": "6aca4df462a3ee11f56b55a9bf4cdbe013ea997c7eb036eb81d8db60c26430a2"
+    },
+    {
+      "path": "assets/brand/ems-logo-original.png",
+      "bytes": 88209,
+      "sha256": "3b1c01e217e4d1d1317ecf52a2855ac205ea43b01d2057ebd33671991724d0f1"
+    },
+    {
+      "path": "assets/brand/ems-logo-transparent.png",
+      "bytes": 90377,
+      "sha256": "5c32df3ec8f0910ab1f29f6d39ade1b4973e1bcd620663fe68498cdc1d67a012"
+    },
+    {
+      "path": "assets/brand/ems-logo-white-text.png",
+      "bytes": 77159,
+      "sha256": "75dfb005273d34a4a837997649334a4dac0ecd87f6716c32ada7bcc7bc306208"
+    },
+    {
+      "path": "assets/brand/ems-original-unaltered.png",
+      "bytes": 90965,
+      "sha256": "1d6f082375e6c42d410419018381319c731147864a689caf0b9eaaeb1bb4a505"
+    },
+    {
+      "path": "assets/brand/ems-symbol.png",
+      "bytes": 51421,
+      "sha256": "639ad10621374fcde09174af22a963e5f0b4da3ab4a17f43cc3a6329bb360975"
+    },
+    {
+      "path": "assets/brand/ems-wordmark-charcoal.png",
+      "bytes": 32516,
+      "sha256": "ff229d166b3e54c195a443c56a5f81f0ba3fd56f476f680699cdc33103cb6331"
+    },
+    {
+      "path": "assets/brand/ems-wordmark-white.png",
+      "bytes": 32858,
+      "sha256": "ad802297dd94ea936eb7593871eb9229e5af630e48799158d248c818dbe7f146"
+    },
+    {
+      "path": "assets/favicon.png",
+      "bytes": 17904,
+      "sha256": "6545b9e0b9123cba94a8f6321c70220d55895241e78e7ce40324fd459b3b53a8"
+    },
+    {
+      "path": "assets/images/architecture.svg",
+      "bytes": 2296,
+      "sha256": "ed46d6d684040c9c68acbf4d2f62465fa8420948e14af215a66f4a029da0fc31"
+    },
+    {
+      "path": "assets/images/virtual/a1.webp",
+      "bytes": 101586,
+      "sha256": "5108c964defa3d94c148b83ce9d023329102a51bcacc4c4c120510c7e76c1e14"
+    },
+    {
+      "path": "assets/images/virtual/a2.webp",
+      "bytes": 73164,
+      "sha256": "e536353829a1d627687e2ed490f913975823ac17b143f31355c6c77de30d79fd"
+    },
+    {
+      "path": "assets/images/virtual/a3.webp",
+      "bytes": 157094,
+      "sha256": "de0777d0d0088e0c17fd33a41b233009a0dc3908ba5457ef09f95880ab654c76"
+    },
+    {
+      "path": "assets/images/virtual/a4.webp",
+      "bytes": 70226,
+      "sha256": "aa8fa2dae5e2e87ed3a4c19c87367f1d62af47516a54180a8d9ddb375daeb6a1"
+    },
+    {
+      "path": "assets/images/virtual/b1.webp",
+      "bytes": 94458,
+      "sha256": "e6700cfe9843192a01e80e3cd5156924432bceaade6fadb4e59456c12378f841"
+    },
+    {
+      "path": "assets/images/virtual/b2.webp",
+      "bytes": 64204,
+      "sha256": "36617b1d0958f7e19bd61d3a87c97df697ae7a65cceae3a532fe9663fb6eeba4"
+    },
+    {
+      "path": "assets/images/virtual/b3.webp",
+      "bytes": 122968,
+      "sha256": "63d39a7dd861286b2921804dc507ca85e00062314a0ec91383c1550e60418ebf"
+    },
+    {
+      "path": "assets/images/virtual/b4.webp",
+      "bytes": 69650,
+      "sha256": "43adfbc53d507841e763124f36584532a018a78a5347a0c6f278672336d97a36"
+    },
+    {
+      "path": "assets/images/virtual/c1.webp",
+      "bytes": 117506,
+      "sha256": "a5ef0ec1cf9ecc64dd203bf255f0cda4108fc54ef5acfc9366d0ba46813b5e28"
+    },
+    {
+      "path": "assets/images/virtual/c2.webp",
+      "bytes": 79720,
+      "sha256": "8524fc7b5bef6572eaff77865c34d919d92a3ef816a5cd73f4c654b180244c03"
+    },
+    {
+      "path": "assets/images/virtual/c3.webp",
+      "bytes": 163308,
+      "sha256": "f43d1a92242eb29ead1f3039fa979f41f3a51e7a53aa7cca569d8c7d6bcad30a"
+    },
+    {
+      "path": "assets/images/virtual/c4.webp",
+      "bytes": 98372,
+      "sha256": "217d58573e6c72b24fa271ad2bb27ba1ba73d461f572d538f0046c8a79bea379"
+    },
+    {
+      "path": "assets/images/virtual/hero-alt1.webp",
+      "bytes": 191840,
+      "sha256": "51633f90b43959046065476a323e3f294909ec941e032cd1206206717be3711c"
+    },
+    {
+      "path": "assets/images/virtual/hero-alt2.webp",
+      "bytes": 180236,
+      "sha256": "c0bc97ebc73cf72552342a10c7b312ed82a68dae735379adc73d2e5fd23b70ca"
+    },
+    {
+      "path": "assets/images/virtual/hero-coast.webp",
+      "bytes": 445784,
+      "sha256": "6bfa93e7d5a9d61b2e6fed734eb2e58aa9cd734e0f649c034c79425b6500a347"
+    },
+    {
+      "path": "bien.html",
+      "bytes": 6464,
+      "sha256": "53eedbceadb21f663ba599e032b19188b903bbd96a0cbd1a027f495b6c57ffa8"
+    },
+    {
+      "path": "biens.html",
+      "bytes": 9484,
+      "sha256": "196b8765c14716a3bc453b4d39dea6b547e335a61de108eeb2be50ced040e3db"
+    },
+    {
+      "path": "contact.html",
+      "bytes": 8880,
+      "sha256": "12a82aa79b3fbd603e2e80f9512b91416aaf63e40ad006b0fee248418e1975db"
+    },
+    {
+      "path": "css/admin.css",
+      "bytes": 21831,
+      "sha256": "de63ce99f50f2a36733f0be60bfbcfc999d9fc11f307e11caa38c9cca974754f"
+    },
+    {
+      "path": "css/cinema-vision.css",
+      "bytes": 7130,
+      "sha256": "dbaac818befe86d80f7e03e3ffc98df7e0a1cc9723887ed36d57a77c226f2153"
+    },
+    {
+      "path": "css/collection-triptych.css",
+      "bytes": 14139,
+      "sha256": "82bb59135fa3edf0c0905b7cdf22ed0a2940d1633cfefaf8bea7ca55a6c3bb80"
+    },
+    {
+      "path": "css/compact-property.css",
+      "bytes": 10289,
+      "sha256": "9e7884a4b8fec7464dd13618fa2e3fe0709b2134a0815cc97b755713cf61d729"
+    },
+    {
+      "path": "css/concierge-atelier.css",
+      "bytes": 15289,
+      "sha256": "32f1cbc1ab8e08b0830788a1da52822be4e9a4f89325dbb68bf1cb4d4dfb7017"
+    },
+    {
+      "path": "css/detail-carousel.css",
+      "bytes": 7086,
+      "sha256": "6d041b890fc46af41feedb8c1f186f22cc13e85ea62f14b67e6b8f141e7a20a7"
+    },
+    {
+      "path": "css/detail-mosaic.css",
+      "bytes": 7236,
+      "sha256": "1e58a31c4b4e12291ac65f9043f88b049b8b5cdfa45a90cc6ba48e46c03d83ff"
+    },
+    {
+      "path": "css/detail-pills.css",
+      "bytes": 9660,
+      "sha256": "aaffdebdec0b7ed4b188d189826cd65df51f99825d26f8a3ca58e9436fcd8ac8"
+    },
+    {
+      "path": "css/ems-luxury.css",
+      "bytes": 25998,
+      "sha256": "616bec8d0488b5ac14a29959fdb1859735e04dde1303e2b07134e316bdc5a18c"
+    },
+    {
+      "path": "css/ems-marquee.css",
+      "bytes": 2591,
+      "sha256": "28c4d88f7a4e54d48f727fd14b3f97c436a1b073da5a203807c97284bb03841e"
+    },
+    {
+      "path": "css/ems-mobile-menu.css",
+      "bytes": 14492,
+      "sha256": "b70a073610ad8d7d10623d071eae974a741f9e5052040c2c96ccb6e574c80231"
+    },
+    {
+      "path": "css/glass-cta.css",
+      "bytes": 7436,
+      "sha256": "2780ca62de991568d7da968a748e6e6461d7d2043e5a9b755987b4883f944d37"
+    },
+    {
+      "path": "css/home-last-contact.css",
+      "bytes": 2797,
+      "sha256": "cade24a32d0d09721879f6d0432e973cb54650e163fbcb6f36e647fbdf34fddc"
+    },
+    {
+      "path": "css/i18n.css",
+      "bytes": 8709,
+      "sha256": "0aeeff1706e80fcbeea7e964628bd1a403cd102520fbed7529953ca444e14916"
+    },
+    {
+      "path": "css/nav-adaptive.css",
+      "bytes": 4274,
+      "sha256": "7c06a01875a21b077b5da619c11b4ce0986ae1fb602a6dd335d15693a15c6ec3"
+    },
+    {
+      "path": "css/project-editions.css",
+      "bytes": 8314,
+      "sha256": "7815ff67648021a7ff88eee3c1421323228771aa0e8a41d1a6e86ee7af0ddcd2"
+    },
+    {
+      "path": "css/property-cover.css",
+      "bytes": 25814,
+      "sha256": "083ca1387cc3f2417a3b52b4e54d40919a64e75288ad428bdbeded56096b1a2d"
+    },
+    {
+      "path": "css/property-gallery.css",
+      "bytes": 6659,
+      "sha256": "7bc63da3fd2608de3ff1f41dd1adb455b899e1140c983bef9c5c1675d0f0ab56"
+    },
+    {
+      "path": "css/section-refresh.css",
+      "bytes": 9814,
+      "sha256": "c51f1b394d7b958212c46c4b6b77d63551e3664070cff4e8856e942033d450c4"
+    },
+    {
+      "path": "css/site-content.css",
+      "bytes": 664,
+      "sha256": "80579e1090bb68976d1c84c9d2ea0a828eddf937ffe7018d3653fd17230e4089"
+    },
+    {
+      "path": "css/site-theme.css",
+      "bytes": 16901,
+      "sha256": "05d08159b1ceee73ec74d9cc9555b1c514e55fabf47bbffea151d0799c8d5d29"
+    },
+    {
+      "path": "css/style.css",
+      "bytes": 42101,
+      "sha256": "56e57d2e21c2407039783f0967f3729f7ee1dab84a20b4dfb2e518d63bea3c8a"
+    },
+    {
+      "path": "css/triptych-motion.css",
+      "bytes": 3730,
+      "sha256": "b1ba2534e1e397b228ce86d17730e9da6ce09fbffcc345a036eb57c19ef95334"
+    },
+    {
+      "path": "css/v4.css",
+      "bytes": 36403,
+      "sha256": "9ce0a7e75a4c202057f5b084cad8418e9469da4aa4cc95d428c7de802aaea212"
+    },
+    {
+      "path": "css/whatsapp-concierge.css",
+      "bytes": 10222,
+      "sha256": "e10de9d2af21aabb58d5de69d2594c0f80b2c76359b21bfc04ba9f3c77779edd"
+    },
+    {
+      "path": "destinations.html",
+      "bytes": 7718,
+      "sha256": "442f2eaff251b18f9accf0e62fea8f2426dd876016de3d4ad8a671784d48d988"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18716,
+      "sha256": "b71a8b543d71628ddff28d0d2317037eb9719c6637e695ad8b88200976993307"
+    },
+    {
+      "path": "js/admin.js",
+      "bytes": 16816,
+      "sha256": "bdf9d45d6da43bfb0e2866cfaae72470db819cfc79eaceeedc6ed76b2d2e6eab"
+    },
+    {
+      "path": "js/app.js",
+      "bytes": 24045,
+      "sha256": "5eec22d2ca1ee24707016471f2e9fcced59b6d46543e1842d651f065719bd268"
+    },
+    {
+      "path": "js/cinema-vision.js",
+      "bytes": 698,
+      "sha256": "ef220e66f65e189bbd7adad1724387abf6b93da0df32f079f2dcc8ef3a2d1f06"
+    },
+    {
+      "path": "js/cities.js",
+      "bytes": 1761,
+      "sha256": "2193a292a3c101883f1ffc7bd6f645b73ad66a700d21ac046d708896939fbfd7"
+    },
+    {
+      "path": "js/config.js",
+      "bytes": 281,
+      "sha256": "0d49d294b05dbc68777ac323917a51d68b9da88b1e601ee0d083db0398858c8c"
+    },
+    {
+      "path": "js/data.js",
+      "bytes": 6452,
+      "sha256": "d1bcc9032a163b6a179b3a31ace33868aea9cf4ade4be674bf23c2fc58549896"
+    },
+    {
+      "path": "js/detail-carousel.js",
+      "bytes": 8031,
+      "sha256": "e0ed11ae74d8294316a7e8d8b770585c5d5c987af9ed0f8d2fdf6f321520a47e"
+    },
+    {
+      "path": "js/detail-pills.js",
+      "bytes": 1224,
+      "sha256": "1da59b2a437801dc342a431e16a5f10ef0bb9d1a70bc55cab345146ced01c55c"
+    },
+    {
+      "path": "js/ems-marquee.js",
+      "bytes": 1997,
+      "sha256": "ce3e7c7409ea3bde983eedc86b55802eb6e868016925797c78c34379f9b6ad73"
+    },
+    {
+      "path": "js/ems-mobile-menu.js",
+      "bytes": 3604,
+      "sha256": "51a0fca8deb8e734978cc3d7d1610e678261cbfab1870b679cf6b41f04d2d256"
+    },
+    {
+      "path": "js/experience.js",
+      "bytes": 5187,
+      "sha256": "0e99f948ec04a0b2b6d2dcef0f9826d9f7d886e1849766da41c880bf9461e76d"
+    },
+    {
+      "path": "js/home-images.js",
+      "bytes": 1652,
+      "sha256": "5919f29704d88e58673dfc93093796957032465729289c1b776fb65cc8e19e7b"
+    },
+    {
+      "path": "js/i18n.js",
+      "bytes": 46512,
+      "sha256": "f81be2abaa8a390c5520a750dd6b15e1b82744921765444399cc82abb4e038eb"
+    },
+    {
+      "path": "js/nav-adaptive.js",
+      "bytes": 1876,
+      "sha256": "0f3be574601e5f8db2000f5ed5e5e9a54114c1fa6c1484c671cf730ce8b052c8"
+    },
+    {
+      "path": "js/project-editions.js",
+      "bytes": 1171,
+      "sha256": "d36221987cf49aa28947515873fdc6656461d785f768c5b4e2ab2346cc162dfe"
+    },
+    {
+      "path": "js/property-gallery.js",
+      "bytes": 8934,
+      "sha256": "7e3c2ea7acb8c2e90c3e2596bcacc1a0e105dd6378349ea217c2506220ffce8f"
+    },
+    {
+      "path": "js/section-refresh.js",
+      "bytes": 1481,
+      "sha256": "6d61ef7b743a9e622823dba44ee8bf06de82bd1da7ca936668c405efedd9310d"
+    },
+    {
+      "path": "js/site-content.js",
+      "bytes": 6060,
+      "sha256": "9059e42debda803b2b0b6a9abdb97ad5b1d53b20f981af19cbb842144de0be95"
+    },
+    {
+      "path": "js/site-theme.js",
+      "bytes": 2296,
+      "sha256": "254eb8db030031f69dbc369b4575fe47546d9cce380befdb65147d180e988d43"
+    },
+    {
+      "path": "js/triptych-motion.js",
+      "bytes": 9419,
+      "sha256": "b163c07809f786ebfb5f0bd78ed98f6a80cf609c982d9d7d7b05051de5a0acf1"
+    },
+    {
+      "path": "js/v4.js",
+      "bytes": 22797,
+      "sha256": "e5177baf778d75da45c6b716f6f87a44e7f5a1f47ddd0d2107ec520665a0e754"
+    },
+    {
+      "path": "js/whatsapp-concierge.js",
+      "bytes": 5522,
+      "sha256": "42d51d7197a24a9d541b0cbac530b7bf4b123b50545fe9a0f2f01bc6ab2e87a0"
+    },
+    {
+      "path": "js/wix/address-templates.generated.js",
+      "bytes": 48621,
+      "sha256": "e31aa9d4db40133d912c637a71942e7e56328e7a9cb4050f2d2c1bbee069987c"
+    },
+    {
+      "path": "js/wix/client.js",
+      "bytes": 7870,
+      "sha256": "c288a236798aa52a62589a9fe72ff30204a3146565d7d0f1ef79ab7559456488"
+    },
+    {
+      "path": "js/wix/cms-types.js",
+      "bytes": 5150,
+      "sha256": "d472a020ff894fd5d0ba98d2be48592c9ea6d2bd1489ec4b4d00ea3c297c8bf3"
+    },
+    {
+      "path": "js/wix/collection-store.js",
+      "bytes": 8851,
+      "sha256": "0abf2d37b8c144d8389ffccab0e9ff09cd8b25fde9ef79530451e16e5fab81f6"
+    },
+    {
+      "path": "js/wix/collections-core.js",
+      "bytes": 1890,
+      "sha256": "4fb78f125ef30cf3e326cb7ebd5596e27b2c6c53e252441be1f2b1fbbd398979"
+    },
+    {
+      "path": "js/wix/collections.js",
+      "bytes": 1856,
+      "sha256": "56f9df0c0835f20e0a53ee049bfb1dfece781045fb33e77267d01be0f9c6024d"
+    },
+    {
+      "path": "js/wix/config.js",
+      "bytes": 69,
+      "sha256": "e42e6e5de7fb627a93c0b7ae8c6fedbc738fbf887efa7ecc22b62227c0c7f611"
+    },
+    {
+      "path": "js/wix/form-store.js",
+      "bytes": 25660,
+      "sha256": "0fafe8610354df24566dcca752506deb483e9cedd5a334340ee4cbcfc2a26bdb"
+    },
+    {
+      "path": "js/wix/forms-address-core.js",
+      "bytes": 7472,
+      "sha256": "0f6ccaae8e969cd5a125d1309b4b48f55c2b6a29a277b205f3a2080b41187217"
+    },
+    {
+      "path": "js/wix/forms-core.js",
+      "bytes": 31704,
+      "sha256": "3181d90d79994fe53f9e2723955b1b94bc8d480c5cf931c3935dc85366a3b56a"
+    },
+    {
+      "path": "js/wix/forms-types.js",
+      "bytes": 13405,
+      "sha256": "12fdfef170e7a6315e5a8851b08c58fc5e580b15e966a50e3780024c9919a573"
+    },
+    {
+      "path": "js/wix/forms.js",
+      "bytes": 2635,
+      "sha256": "352bf422e77938918af97c5a3cd8ba6d9b639cc6503c6177eaa5a38d2b1abf39"
+    },
+    {
+      "path": "js/wix/item-store.js",
+      "bytes": 3420,
+      "sha256": "1049dac70e93d9dee176541b0a6ea95d63f761e9e9337b73fd6a37988ecead02"
+    },
+    {
+      "path": "js/wix/items-core.js",
+      "bytes": 13313,
+      "sha256": "01d693c2d8943d5e747a30db1b6d87cc515a85af8065942c2fffdc45d04abb84"
+    },
+    {
+      "path": "js/wix/items.js",
+      "bytes": 10387,
+      "sha256": "82ead44dbf89489d5e806ef222a771b91ffd462b45000e5a9b417b5cd9272bd6"
+    },
+    {
+      "path": "js/wix/media.js",
+      "bytes": 5421,
+      "sha256": "5b17ef47c1e5879d71050ac341d13a6b41801ea300572d529d7e794f918b481a"
+    },
+    {
+      "path": "js/wix/rich-content.js",
+      "bytes": 8537,
+      "sha256": "957e7bd684f4dc72b9bd70aa0ac14324072cab8c5a4b4fb1d82147432c31c47a"
+    },
+    {
+      "path": "js/wix/submissions-core.js",
+      "bytes": 24700,
+      "sha256": "7206d5a9dedb93bb9dda87f1fe3c7e9a5080f5b09284461072ba21a5b76b1f0e"
+    },
+    {
+      "path": "js/wix/submissions.js",
+      "bytes": 4865,
+      "sha256": "b51ba6c42235cf0c79648ccc5869b4dbb321a181af9e1e29c86b938ee776b932"
+    }
+  ]
+}
